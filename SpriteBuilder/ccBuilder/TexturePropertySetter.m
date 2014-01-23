@@ -130,8 +130,9 @@
     }
     else
     {
+        NSString* file = [[[fontFile lastPathComponent] stringByDeletingPathExtension] stringByAppendingPathExtension:@"fnt"];
         absPath = [[ResourceManager sharedManager] toAbsolutePath:fontFile];
-        absPath = [CCBFileUtil toResolutionIndependentFile:absPath];
+        absPath = [absPath stringByAppendingPathComponent:file];
     }
     
     @try

@@ -5,9 +5,9 @@
 	<key>ordering</key>
 	<integer>1000</integer>
 	<key>displayName</key>
-	<string>Node</string>
+	<string>Node(结点)</string>
 	<key>description</key>
-	<string>The base class of all Cocos2d nodes.</string>
+	<string>最基础的元素，可以用来装其他元素</string>
 	<key>className</key>
 	<string>CCNode</string>
 	<key>canHaveChildren</key>
@@ -31,7 +31,7 @@
 			<key>dontSetInEditor</key>
 			<true/>
 			<key>displayName</key>
-			<string>CCNode</string>
+			<string>CCNode 属性</string>
 			<key>name</key>
 			<string>CCNode</string>
 		</dict>
@@ -45,13 +45,13 @@
 			<key>name</key>
 			<string>visible</string>
 			<key>displayName</key>
-			<string>Visible</string>
+			<string>显示</string>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>name</string>
 			<key>displayName</key>
-			<string>Name</string>
+			<string>名称</string>
 			<key>type</key>
 			<string>StringSimple</string>
 		</dict>
@@ -65,7 +65,7 @@
 			<key>animatable</key>
 			<true/>
 			<key>displayName</key>
-			<string>Position</string>
+			<string>位置</string>
 			<key>type</key>
 			<string>Position</string>
 			<key>name</key>
@@ -88,7 +88,7 @@
 			<key>name</key>
 			<string>contentSize</string>
 			<key>displayName</key>
-			<string>Content size</string>
+			<string>尺寸</string>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -96,7 +96,7 @@
 			<key>name</key>
 			<string>anchorPoint</string>
 			<key>displayName</key>
-			<string>Anchor point</string>
+			<string>锚点</string>
 		</dict>
 		<dict>
 			<key>defaultSerialization</key>
@@ -112,7 +112,7 @@
 			<key>name</key>
 			<string>scale</string>
 			<key>displayName</key>
-			<string>Scale</string>
+			<string>缩放</string>
 		</dict>
 		<dict>
 			<key>defaultSerialization</key>
@@ -124,7 +124,7 @@
 			<key>name</key>
 			<string>rotation</string>
 			<key>displayName</key>
-			<string>Rotation</string>
+			<string>旋转</string>
 		</dict>
 		<dict>
 			<key>defaultSerialization</key>
@@ -163,7 +163,7 @@
 			<key>name</key>
 			<string>skew</string>
 			<key>displayName</key>
-			<string>Skew</string>
+			<string>倾斜</string>
 		</dict>
 	</array>
 	<key>propertiesOverridden</key>

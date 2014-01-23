@@ -139,6 +139,33 @@
 		929C9FC0187E391C009ED9DF /* InspectorPopoverFloat.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929C9FBD187E38AC009ED9DF /* InspectorPopoverFloat.xib */; };
 		92BF5E5B187B43F00072C3A1 /* ResourceManagerPreviewAudio.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92976369187775A0008F997B /* ResourceManagerPreviewAudio.xib */; };
 		92BF5E5D187B658D0072C3A1 /* InspectorStringSimple.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8076F9521862459A003C4153 /* InspectorStringSimple.xib */; };
+		9C6042941890DECF002D619A /* CCTMXLayer-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C60428B1890DECF002D619A /* CCTMXLayer-Info.plist */; };
+		9C6042951890DECF002D619A /* CCBPTMXLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C60428E1890DECF002D619A /* CCBPTMXLayer.m */; };
+		9C6042961890DECF002D619A /* CCBPProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C60428F1890DECF002D619A /* CCBPProperties.plist */; };
+		9C6042971890DECF002D619A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C6042901890DECF002D619A /* InfoPlist.strings */; };
+		9C6042981890DECF002D619A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6042921890DECF002D619A /* Icon.png */; };
+		9C6042991890DECF002D619A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6042931890DECF002D619A /* Icon@2x.png */; };
+		9C6042A11890E948002D619A /* InspectorMapFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C60429E1890E948002D619A /* InspectorMapFile.xib */; };
+		9C6042A21890E948002D619A /* InspectorMapFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6042A01890E948002D619A /* InspectorMapFile.m */; };
+		9C6042A71890EAF6002D619A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7789ABC2133AA82000CEFCC7 /* Cocoa.framework */; };
+		9C6042B11890EB16002D619A /* CCBPTMXLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C60428E1890DECF002D619A /* CCBPTMXLayer.m */; };
+		9C6042B21890EB21002D619A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C6042901890DECF002D619A /* InfoPlist.strings */; };
+		9C6042B31890EB23002D619A /* CCBPProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C60428F1890DECF002D619A /* CCBPProperties.plist */; };
+		9C6042B41890EB27002D619A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6042921890DECF002D619A /* Icon.png */; };
+		9C6042B51890EC69002D619A /* CCTiledMap.ccbPlugNode in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 9C6042AF1890EAF6002D619A /* CCTiledMap.ccbPlugNode */; };
+		9CA9DE42188C00990005DCE5 /* CCBPBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9DE3A188C00990005DCE5 /* CCBPBatchNode.m */; };
+		9CA9DE43188C00990005DCE5 /* CCBPProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9DE3B188C00990005DCE5 /* CCBPProperties.plist */; };
+		9CA9DE44188C00990005DCE5 /* CCBatchNode-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9DE3C188C00990005DCE5 /* CCBatchNode-Info.plist */; };
+		9CA9DE45188C00990005DCE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9DE3E188C00990005DCE5 /* InfoPlist.strings */; };
+		9CA9DE46188C00990005DCE5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9DE40188C00990005DCE5 /* Icon.png */; };
+		9CA9DE50188C02060005DCE5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7789ABC2133AA82000CEFCC7 /* Cocoa.framework */; };
+		9CA9DE5A188C022C0005DCE5 /* CCBPBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9DE3A188C00990005DCE5 /* CCBPBatchNode.m */; };
+		9CA9DE5C188C02660005DCE5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9DE40188C00990005DCE5 /* Icon.png */; };
+		9CA9DE5D188C026C0005DCE5 /* CCBPProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9DE3B188C00990005DCE5 /* CCBPProperties.plist */; };
+		9CA9DE5E188C02820005DCE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9DE3E188C00990005DCE5 /* InfoPlist.strings */; };
+		9CA9DE79188C0A1D0005DCE5 /* CCBatchNode.ccbPlugNode in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 9CA9DE58188C02060005DCE5 /* CCBatchNode.ccbPlugNode */; };
+		9CA9DE7D188C21170005DCE5 /* InspectorFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9DE7B188C21170005DCE5 /* InspectorFile.m */; };
+		9CA9DE7E188C21170005DCE5 /* InspectorFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9DE7C188C21170005DCE5 /* InspectorFile.xib */; };
 		A09AB6F714E993AA009C8B91 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = A09AB6F614E993AA009C8B91 /* fps_images.png */; };
 		B7083DF317B1C363006628C7 /* LocalizationEditorWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7083DF217B1C363006628C7 /* LocalizationEditorWindow.xib */; };
 		B7083DF617B1CB88006628C7 /* LocalizationEditorWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B7083DF517B1CB88006628C7 /* LocalizationEditorWindow.m */; };
@@ -626,6 +653,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9C6042B61890EC97002D619A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7789ABB5133AA82000CEFCC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C6042A31890EAF6002D619A;
+			remoteInfo = CCTiledMap;
+		};
+		9CA9DE4A188C00990005DCE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7D0917D17C2C12A0007FE7F /* cocos2d-osx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D37EE9FC187D4E7700CB5EF2;
+			remoteInfo = ObjectiveChipmunk;
+		};
+		9CA9DE60188C058E0005DCE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7789ABB5133AA82000CEFCC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CA9DE4C188C02060005DCE5;
+			remoteInfo = CCBatchNode;
+		};
 		B729AC6B181F0D1400BA0D9C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7789ABB5133AA82000CEFCC7 /* Project object */;
@@ -801,8 +849,10 @@
 				E35DBBDA14F2AA7C0070A6E4 /* CCLabelBMFont.ccbPlugNode in Copy PlugIns */,
 				E35DBBA614F245030070A6E4 /* CCNodeGradient.ccbPlugNode in Copy PlugIns */,
 				E35DBB8C14F226190070A6E4 /* CCNodeColor.ccbPlugNode in Copy PlugIns */,
+				9CA9DE79188C0A1D0005DCE5 /* CCBatchNode.ccbPlugNode in Copy PlugIns */,
 				E3C365FE14E9F147007CD5FF /* CCSprite.ccbPlugNode in Copy PlugIns */,
 				E3B7AED514E31E6C00DFD402 /* CCNode.ccbPlugNode in Copy PlugIns */,
+				9C6042B51890EC69002D619A /* CCTiledMap.ccbPlugNode in Copy PlugIns */,
 			);
 			name = "Copy PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -993,6 +1043,30 @@
 		92976368187775A0008F997B /* ResourceManagerPreviewAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceManagerPreviewAudio.m; sourceTree = "<group>"; };
 		92976369187775A0008F997B /* ResourceManagerPreviewAudio.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResourceManagerPreviewAudio.xib; sourceTree = "<group>"; };
 		929C9FBD187E38AC009ED9DF /* InspectorPopoverFloat.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InspectorPopoverFloat.xib; sourceTree = "<group>"; };
+		9C60428B1890DECF002D619A /* CCTMXLayer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CCTMXLayer-Info.plist"; sourceTree = "<group>"; };
+		9C60428C1890DECF002D619A /* CCTMXLayer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCTMXLayer-Prefix.pch"; sourceTree = "<group>"; };
+		9C60428D1890DECF002D619A /* CCBPTMXLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCBPTMXLayer.h; path = CCTMXLayer/CCBPTMXLayer.h; sourceTree = "<group>"; };
+		9C60428E1890DECF002D619A /* CCBPTMXLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCBPTMXLayer.m; path = CCTMXLayer/CCBPTMXLayer.m; sourceTree = "<group>"; };
+		9C60428F1890DECF002D619A /* CCBPProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CCBPProperties.plist; sourceTree = "<group>"; };
+		9C6042911890DECF002D619A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C6042921890DECF002D619A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		9C6042931890DECF002D619A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		9C60429E1890E948002D619A /* InspectorMapFile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InspectorMapFile.xib; sourceTree = "<group>"; };
+		9C60429F1890E948002D619A /* InspectorMapFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorMapFile.h; sourceTree = "<group>"; };
+		9C6042A01890E948002D619A /* InspectorMapFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorMapFile.m; sourceTree = "<group>"; };
+		9C6042AF1890EAF6002D619A /* CCTiledMap.ccbPlugNode */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCTiledMap.ccbPlugNode; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6042B01890EAF7002D619A /* CCBatchNode copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CCBatchNode copy-Info.plist"; path = "/Users/chanyuenpang/Desktop/_SpriteBuilder/SpriteBuilder/CCBatchNode copy-Info.plist"; sourceTree = "<absolute>"; };
+		9CA9DE39188C00990005DCE5 /* CCBPBatchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBPBatchNode.h; sourceTree = "<group>"; };
+		9CA9DE3A188C00990005DCE5 /* CCBPBatchNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBPBatchNode.m; sourceTree = "<group>"; };
+		9CA9DE3B188C00990005DCE5 /* CCBPProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CCBPProperties.plist; sourceTree = "<group>"; };
+		9CA9DE3C188C00990005DCE5 /* CCBatchNode-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CCBatchNode-Info.plist"; sourceTree = "<group>"; };
+		9CA9DE3D188C00990005DCE5 /* CCBatchNode-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCBatchNode-Prefix.pch"; sourceTree = "<group>"; };
+		9CA9DE3F188C00990005DCE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9CA9DE40188C00990005DCE5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		9CA9DE58188C02060005DCE5 /* CCBatchNode.ccbPlugNode */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCBatchNode.ccbPlugNode; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA9DE7A188C21170005DCE5 /* InspectorFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorFile.h; sourceTree = "<group>"; };
+		9CA9DE7B188C21170005DCE5 /* InspectorFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorFile.m; sourceTree = "<group>"; };
+		9CA9DE7C188C21170005DCE5 /* InspectorFile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InspectorFile.xib; sourceTree = "<group>"; };
 		A09AB6F614E993AA009C8B91 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fps_images.png; path = "libs/cocos2d-iphone/Resources/Fonts/fps_images.png"; sourceTree = SOURCE_ROOT; };
 		B7083DF217B1C363006628C7 /* LocalizationEditorWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalizationEditorWindow.xib; sourceTree = "<group>"; };
 		B7083DF417B1CB88006628C7 /* LocalizationEditorWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationEditorWindow.h; sourceTree = "<group>"; };
@@ -1719,6 +1793,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C6042A61890EAF6002D619A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C6042A71890EAF6002D619A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA9DE4F188C02060005DCE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA9DE50188C02060005DCE5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B729AC4F181F091800BA0D9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2271,6 +2361,7 @@
 				FA98CFC5154E7D1C006E58C5 /* ccbpublish */,
 				7789ABC1133AA82000CEFCC7 /* Frameworks */,
 				7789ABBF133AA82000CEFCC7 /* Products */,
+				9C6042B01890EAF7002D619A /* CCBatchNode copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2296,6 +2387,8 @@
 				B7EE699518188E0800B983FE /* CCTextField.ccbPlugNode */,
 				B7EE69F81819EE0D00B983FE /* CCLayoutBox.ccbPlugNode */,
 				B729AC52181F091800BA0D9C /* CCSlider.ccbPlugNode */,
+				9CA9DE58188C02060005DCE5 /* CCBatchNode.ccbPlugNode */,
+				9C6042AF1890EAF6002D619A /* CCTiledMap.ccbPlugNode */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2502,6 +2595,49 @@
 				80AD799F1863871200B653B7 /* PVRTTexture.h */,
 			);
 			path = Include;
+			sourceTree = "<group>";
+		};
+		9C60428A1890DECF002D619A /* CCTMXLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9C60429D1890E84C002D619A /* Supporting Files */,
+			);
+			path = CCTMXLayer;
+			sourceTree = "<group>";
+		};
+		9C60429D1890E84C002D619A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C60428B1890DECF002D619A /* CCTMXLayer-Info.plist */,
+				9C60428C1890DECF002D619A /* CCTMXLayer-Prefix.pch */,
+				9C60428F1890DECF002D619A /* CCBPProperties.plist */,
+				9C6042901890DECF002D619A /* InfoPlist.strings */,
+				9C6042921890DECF002D619A /* Icon.png */,
+				9C6042931890DECF002D619A /* Icon@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CA9DE38188C00990005DCE5 /* CCBatchNode */ = {
+			isa = PBXGroup;
+			children = (
+				9CA9DE5F188C02F90005DCE5 /* Supporting Files */,
+				9CA9DE39188C00990005DCE5 /* CCBPBatchNode.h */,
+				9CA9DE3A188C00990005DCE5 /* CCBPBatchNode.m */,
+			);
+			path = CCBatchNode;
+			sourceTree = "<group>";
+		};
+		9CA9DE5F188C02F90005DCE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CA9DE40188C00990005DCE5 /* Icon.png */,
+				9CA9DE3C188C00990005DCE5 /* CCBatchNode-Info.plist */,
+				9CA9DE3E188C00990005DCE5 /* InfoPlist.strings */,
+				9CA9DE3D188C00990005DCE5 /* CCBatchNode-Prefix.pch */,
+				9CA9DE3B188C00990005DCE5 /* CCBPProperties.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		B7083DEF17B1C31E006628C7 /* Localization Editor */ = {
@@ -2760,6 +2896,7 @@
 			children = (
 				B7D0918417C2C12B0007FE7F /* libcocos2d.a */,
 				B7D0918617C2C12B0007FE7F /* libkazmath.a */,
+				9CA9DE4B188C00990005DCE5 /* libObjectiveChipmunk.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2955,7 +3092,11 @@
 			isa = PBXGroup;
 			children = (
 				E3D59123150F5367004180CA /* CCBFile */,
+				9C60428A1890DECF002D619A /* CCTMXLayer */,
+				9C60428D1890DECF002D619A /* CCBPTMXLayer.h */,
+				9C60428E1890DECF002D619A /* CCBPTMXLayer.m */,
 				E3B7AEC714E3193500DFD402 /* CCNode */,
+				9CA9DE38188C00990005DCE5 /* CCBatchNode */,
 				B7EE69FA1819EE0D00B983FE /* CCLayoutBox */,
 				E3C365ED14E9E4D1007CD5FF /* CCSprite */,
 				B7C3532417F65547005697C1 /* CCSprite9Slice */,
@@ -3378,6 +3519,9 @@
 				E3D59132150F85D8004180CA /* InspectorCCBFile.xib */,
 				E3D59134150F861E004180CA /* InspectorCCBFile.h */,
 				E3D59135150F861E004180CA /* InspectorCCBFile.m */,
+				9CA9DE7A188C21170005DCE5 /* InspectorFile.h */,
+				9CA9DE7B188C21170005DCE5 /* InspectorFile.m */,
+				9CA9DE7C188C21170005DCE5 /* InspectorFile.xib */,
 				E35DBBC314F2A2900070A6E4 /* InspectorText.xib */,
 				E35DBBC514F2A2A40070A6E4 /* InspectorText.h */,
 				E35DBBC614F2A2A50070A6E4 /* InspectorText.m */,
@@ -3390,6 +3534,9 @@
 				E35DBBE014F3DCDE0070A6E4 /* InspectorFontTTF.xib */,
 				E35DBBE214F3DD0A0070A6E4 /* InspectorFontTTF.h */,
 				E35DBBE314F3DD0A0070A6E4 /* InspectorFontTTF.m */,
+				9C60429E1890E948002D619A /* InspectorMapFile.xib */,
+				9C60429F1890E948002D619A /* InspectorMapFile.h */,
+				9C6042A01890E948002D619A /* InspectorMapFile.m */,
 				E35DBC1A14F4DED00070A6E4 /* InspectorStartStop.xib */,
 				E35DBC1C14F4DF030070A6E4 /* InspectorStartStop.h */,
 				E35DBC1D14F4DF040070A6E4 /* InspectorStartStop.m */,
@@ -3591,6 +3738,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				9C6042B71890EC97002D619A /* PBXTargetDependency */,
+				9CA9DE61188C058E0005DCE5 /* PBXTargetDependency */,
 				B729AC6C181F0D1400BA0D9C /* PBXTargetDependency */,
 				B7EE6A091819EE6000B983FE /* PBXTargetDependency */,
 				B7EE69A618188EB800B983FE /* PBXTargetDependency */,
@@ -3614,6 +3763,40 @@
 			productName = ccBuilder;
 			productReference = 7789ABBE133AA82000CEFCC7 /* SpriteBuilder.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9C6042A31890EAF6002D619A /* CCTiledMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C6042AC1890EAF6002D619A /* Build configuration list for PBXNativeTarget "CCTiledMap" */;
+			buildPhases = (
+				9C6042A41890EAF6002D619A /* Sources */,
+				9C6042A61890EAF6002D619A /* Frameworks */,
+				9C6042A81890EAF6002D619A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCTiledMap;
+			productName = CCNode;
+			productReference = 9C6042AF1890EAF6002D619A /* CCTiledMap.ccbPlugNode */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9CA9DE4C188C02060005DCE5 /* CCBatchNode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA9DE55188C02060005DCE5 /* Build configuration list for PBXNativeTarget "CCBatchNode" */;
+			buildPhases = (
+				9CA9DE4D188C02060005DCE5 /* Sources */,
+				9CA9DE4F188C02060005DCE5 /* Frameworks */,
+				9CA9DE51188C02060005DCE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCBatchNode;
+			productName = CCNode;
+			productReference = 9CA9DE58188C02060005DCE5 /* CCBatchNode.ccbPlugNode */;
+			productType = "com.apple.product-type.bundle";
 		};
 		B729AC51181F091800BA0D9C /* CCSlider */ = {
 			isa = PBXNativeTarget;
@@ -3976,11 +4159,20 @@
 				B79F90D717FF30DB00908504 /* CCPhysicsNode */,
 				7789ABBD133AA82000CEFCC7 /* SpriteBuilder */,
 				FA98CFC0154E7D1C006E58C5 /* ccbpublish */,
+				9CA9DE4C188C02060005DCE5 /* CCBatchNode */,
+				9C6042A31890EAF6002D619A /* CCTiledMap */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		9CA9DE4B188C00990005DCE5 /* libObjectiveChipmunk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libObjectiveChipmunk.a;
+			remoteRef = 9CA9DE4A188C00990005DCE5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		B7D0918417C2C12B0007FE7F /* libcocos2d.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -4083,6 +4275,7 @@
 				E3B4222714E5992F004547D6 /* InspectorFlip.xib in Resources */,
 				E3B4222C14E5A828004547D6 /* InspectorBlendmode.xib in Resources */,
 				E3B4223414E5E68B004547D6 /* InspectorSeparator.xib in Resources */,
+				9C6042991890DECF002D619A /* Icon@2x.png in Resources */,
 				A09AB6F714E993AA009C8B91 /* fps_images.png in Resources */,
 				B71706CE184ECD660081720A /* select-move.png in Resources */,
 				E32D8CC514EC257000F4BD5E /* InspectorCodeConnections.xib in Resources */,
@@ -4116,6 +4309,7 @@
 				E3F3F845153C7772005443EE /* notes-bg.png in Resources */,
 				E3F3F847153D9126005443EE /* StickyNoteEditView.xib in Resources */,
 				E3F3F849153DB893005443EE /* notes-close.png in Resources */,
+				9C6042981890DECF002D619A /* Icon.png in Resources */,
 				E3F3F84B153DBA43005443EE /* notes-close-down.png in Resources */,
 				E35A2D8D1540111A00F78B72 /* position-0.png in Resources */,
 				E35A2D8E1540111A00F78B72 /* position-1.png in Resources */,
@@ -4162,6 +4356,7 @@
 				E3E0557E159B8466001066C5 /* seq-keyframe-easeout.png in Resources */,
 				E3E0557F159B8466001066C5 /* seq-keyframe-interpol.png in Resources */,
 				E392618F159CAAA10034FF1D /* seq-keyframe-interpol-vis.png in Resources */,
+				9C6042A11890E948002D619A /* InspectorMapFile.xib in Resources */,
 				E3926190159CAAA10034FF1D /* seq-keyframe-l-sel.png in Resources */,
 				E3926191159CAAA10034FF1D /* seq-keyframe-l.png in Resources */,
 				E3926192159CAAA10034FF1D /* seq-keyframe-r-sel.png in Resources */,
@@ -4180,6 +4375,7 @@
 				E33C2ABA15CBF2580043EF9B /* seq-keyframe-hint.png in Resources */,
 				E3214C4115D3BF4D002413A7 /* CustomPropSettingsWindow.xib in Resources */,
 				E3214C4C15D40F01002413A7 /* InspectorCustom.xib in Resources */,
+				9C6042961890DECF002D619A /* CCBPProperties.plist in Resources */,
 				E3214C5E15D54356002413A7 /* InspectorCustomEdit.xib in Resources */,
 				B71706CF184ECD660081720A /* select-move@2x.png in Resources */,
 				E3B7BC9C15E3B7F100CF95EF /* NodePlugInsList.plist in Resources */,
@@ -4206,6 +4402,7 @@
 				B7096E2C180CD98E00164A8A /* doc-scene@2x.png in Resources */,
 				E35D78D616826C0100A53BEF /* SpriteSheetSettingsWindow.xib in Resources */,
 				E3DEF5B7169B359C00B9DCF4 /* lame in Resources */,
+				9CA9DE7E188C21170005DCE5 /* InspectorFile.xib in Resources */,
 				E3DEF5B9169B35DF00B9DCF4 /* lame-COPYING in Resources */,
 				E334741D169DC5A7000737CC /* APIDocsWindow.xib in Resources */,
 				E3F4087416A9EEC5009A0253 /* ccz in Resources */,
@@ -4222,6 +4419,7 @@
 				E312972E16CC33B200A09155 /* SequencerPopoverBlock.xib in Resources */,
 				E312973516CC677400A09155 /* SequencerPopoverSound.xib in Resources */,
 				E32FA2F816D5781600254653 /* seq-row-channel-bg.png in Resources */,
+				9C6042941890DECF002D619A /* CCTMXLayer-Info.plist in Resources */,
 				E3B5EE8A16D6E0AA00C07990 /* InspectorFloatXY.xib in Resources */,
 				E318CB3916D83F3B00348E0D /* InspectorPopoverFloatXY.xib in Resources */,
 				E390C77F170A2C9B003E9E92 /* AboutWindow.xib in Resources */,
@@ -4258,6 +4456,7 @@
 				B7AC69CB17A70A4B0041B8BD /* inspector-props.png in Resources */,
 				B7AC69CC17A70A4B0041B8BD /* inspector-props@2x.png in Resources */,
 				B7AC69CD17A70A4B0041B8BD /* inspector-template.png in Resources */,
+				9C6042971890DECF002D619A /* InfoPlist.strings in Resources */,
 				B7AC69DC17A9D9700041B8BD /* defaultTemplates.zip in Resources */,
 				B7083DF317B1C363006628C7 /* LocalizationEditorWindow.xib in Resources */,
 				B7083DFB17B2CC65006628C7 /* LocaliztaionEditorLanguageList.plist in Resources */,
@@ -4268,6 +4467,26 @@
 				B78AE45217E3B1600028BE0B /* scale-2.png in Resources */,
 				B78AE45317E3B1600028BE0B /* scale-3.png in Resources */,
 				B78AE45417E3B1600028BE0B /* scale-4.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C6042A81890EAF6002D619A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C6042B21890EB21002D619A /* InfoPlist.strings in Resources */,
+				9C6042B31890EB23002D619A /* CCBPProperties.plist in Resources */,
+				9C6042B41890EB27002D619A /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA9DE51188C02060005DCE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA9DE5E188C02820005DCE5 /* InfoPlist.strings in Resources */,
+				9CA9DE5D188C026C0005DCE5 /* CCBPProperties.plist in Resources */,
+				9CA9DE5C188C02660005DCE5 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4408,20 +4627,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				80FBACCC183422BD00C4BB69 /* inspector-warning.png in Resources */,
+				9CA9DE45188C00990005DCE5 /* InfoPlist.strings in Resources */,
 				E398C02914FB81A30078E771 /* InfoPlist.strings in Resources */,
 				8076F9531862459A003C4153 /* InspectorStringSimple.xib in Resources */,
 				8045F12F183AD6D30082BD94 /* seq-notset.png in Resources */,
 				80E158951843DEDC007242F6 /* select-rotation.png in Resources */,
 				80B149BE183D4D280085935B /* seq-keyframe-x4-sel.png in Resources */,
 				9297636B187775A0008F997B /* ResourceManagerPreviewAudio.xib in Resources */,
+				9CA9DE46188C00990005DCE5 /* Icon.png in Resources */,
 				80E95C551836E41C00D864CA /* select-locked.png in Resources */,
 				80F90900183C186200A714FC /* seq-visible-faint.png in Resources */,
 				800C00701848178D00544BD2 /* select-crosshair.png in Resources */,
 				800C005F1846A40D00544BD2 /* select-scale.png in Resources */,
 				8045F135183AD9B90082BD94 /* seq-locked.png in Resources */,
+				9CA9DE44188C00990005DCE5 /* CCBatchNode-Info.plist in Resources */,
 				80E158A118441FF1007242F6 /* select-skew.png in Resources */,
 				80FBACD81834530100C4BB69 /* visible-icon.png in Resources */,
 				80B149BF183D4D280085935B /* seq-keyframe-x4.png in Resources */,
+				9CA9DE43188C00990005DCE5 /* CCBPProperties.plist in Resources */,
 				8045F12E183AD6D30082BD94 /* seq-visible.png in Resources */,
 				929C9FBE187E38AC009ED9DF /* InspectorPopoverFloat.xib in Resources */,
 				80FBACCB183422BD00C4BB69 /* inspector-warning@2x.png in Resources */,
@@ -4523,6 +4746,7 @@
 				E3B4223214E5CF97004547D6 /* NodeInfo.m in Sources */,
 				E3B4223714E5E6AD004547D6 /* InspectorSeparator.m in Sources */,
 				E3C3660114EA0507007CD5FF /* TexturePropertySetter.m in Sources */,
+				9CA9DE7D188C21170005DCE5 /* InspectorFile.m in Sources */,
 				E3C3660414EB2C1B007CD5FF /* CCBReaderInternal.m in Sources */,
 				E32D8CC814EC25D800F4BD5E /* InspectorCodeConnections.m in Sources */,
 				E35DBBC214F29EF80070A6E4 /* InspectorFntFile.m in Sources */,
@@ -4552,6 +4776,7 @@
 				E36F3C3D152C756D00AAD805 /* NSString+RelativePath.m in Sources */,
 				E34E5D6615357CF2000201FB /* RulersLayer.m in Sources */,
 				E3A16AF31536D096004B528A /* GuidesLayer.m in Sources */,
+				9C6042A21890E948002D619A /* InspectorMapFile.m in Sources */,
 				E3B9AF4B153C150D00489438 /* CCBTransparentWindow.m in Sources */,
 				E3B9AF4E153C48E300489438 /* CCBTransparentView.m in Sources */,
 				E3F3F83F153C72A3005443EE /* NotesLayer.m in Sources */,
@@ -4646,6 +4871,7 @@
 				B7AC69A017A079C80041B8BD /* SMTabBarItem.m in Sources */,
 				B7AC69B017A0A10E0041B8BD /* ResourceManagerTilelessEditorManager.m in Sources */,
 				B7AC69B717A1B9930041B8BD /* CCBImageBrowserView.m in Sources */,
+				9C6042951890DECF002D619A /* CCBPTMXLayer.m in Sources */,
 				B7AC69BA17A2F4470041B8BD /* PlugInNodeViewHandler.m in Sources */,
 				B7AC69C017A3129C0041B8BD /* PlugInNodeCollectionView.m in Sources */,
 				B7AC69C317A320E30041B8BD /* CCBColorView.m in Sources */,
@@ -4661,6 +4887,22 @@
 				B7083E0A17B567E5006628C7 /* StringPropertySetter.m in Sources */,
 				B7737D4F17CC102D005F775A /* InspectorColor4.m in Sources */,
 				B7F02D4C17D13332008A2E2D /* CCBTransparentWindowDraggable.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C6042A41890EAF6002D619A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C6042B11890EB16002D619A /* CCBPTMXLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA9DE4D188C02060005DCE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA9DE5A188C022C0005DCE5 /* CCBPBatchNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4773,6 +5015,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E398C03B14FB8F850078E771 /* CCBXCocos2diPhone.m in Sources */,
+				9CA9DE42188C00990005DCE5 /* CCBPBatchNode.m in Sources */,
 				E3F2C21314FC157E007B660D /* CCBXCocos2diPhoneWriter.m in Sources */,
 				9297636A187775A0008F997B /* ResourceManagerPreviewAudio.m in Sources */,
 				8076F94E18624318003C4153 /* InspectorStringSimple.m in Sources */,
@@ -4822,6 +5065,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9C6042B71890EC97002D619A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C6042A31890EAF6002D619A /* CCTiledMap */;
+			targetProxy = 9C6042B61890EC97002D619A /* PBXContainerItemProxy */;
+		};
+		9CA9DE61188C058E0005DCE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CA9DE4C188C02060005DCE5 /* CCBatchNode */;
+			targetProxy = 9CA9DE60188C058E0005DCE5 /* PBXContainerItemProxy */;
+		};
 		B729AC6C181F0D1400BA0D9C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B729AC51181F091800BA0D9C /* CCSlider */;
@@ -4937,6 +5190,22 @@
 				7789ABD8133AA82000CEFCC7 /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		9C6042901890DECF002D619A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C6042911890DECF002D619A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9CA9DE3E188C00990005DCE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CA9DE3F188C00990005DCE5 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		B729AC57181F091800BA0D9C /* InfoPlist.strings */ = {
@@ -5205,6 +5474,126 @@
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = SpriteBuilder;
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9C6042AD1890EAF6002D619A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CCTMXLayer/CCTMXLayer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				HEADER_SEARCH_PATHS = (
+					"libs/cocos2d-iphone/cocos2d/**",
+					"libs/cocos2d-iphone/cocos2d-ui/**",
+				);
+				INFOPLIST_FILE = "CCTMXLayer/CCTMXLayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = CCTiledMap;
+				WRAPPER_EXTENSION = ccbPlugNode;
+			};
+			name = Debug;
+		};
+		9C6042AE1890EAF6002D619A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CCTMXLayer/CCTMXLayer-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				HEADER_SEARCH_PATHS = (
+					"libs/cocos2d-iphone/cocos2d/**",
+					"libs/cocos2d-iphone/cocos2d-ui/**",
+				);
+				INFOPLIST_FILE = "CCTMXLayer/CCTMXLayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = CCTiledMap;
+				WRAPPER_EXTENSION = ccbPlugNode;
+			};
+			name = Release;
+		};
+		9CA9DE56188C02060005DCE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CCBatchNode/CCBatchNode-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				HEADER_SEARCH_PATHS = (
+					"libs/cocos2d-iphone/cocos2d/**",
+					"libs/cocos2d-iphone/cocos2d-ui/**",
+				);
+				INFOPLIST_FILE = "CCBatchNode/CCBatchNode-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = CCBatchNode;
+				WRAPPER_EXTENSION = ccbPlugNode;
+			};
+			name = Debug;
+		};
+		9CA9DE57188C02060005DCE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CCBatchNode/CCBatchNode-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				HEADER_SEARCH_PATHS = (
+					"libs/cocos2d-iphone/cocos2d/**",
+					"libs/cocos2d-iphone/cocos2d-ui/**",
+				);
+				INFOPLIST_FILE = "CCBatchNode/CCBatchNode-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = CCBatchNode;
+				WRAPPER_EXTENSION = ccbPlugNode;
 			};
 			name = Release;
 		};
@@ -6503,6 +6892,24 @@
 			buildConfigurations = (
 				7789ABDD133AA82000CEFCC7 /* Debug */,
 				7789ABDE133AA82000CEFCC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C6042AC1890EAF6002D619A /* Build configuration list for PBXNativeTarget "CCTiledMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C6042AD1890EAF6002D619A /* Debug */,
+				9C6042AE1890EAF6002D619A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA9DE55188C02060005DCE5 /* Build configuration list for PBXNativeTarget "CCBatchNode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA9DE56188C02060005DCE5 /* Debug */,
+				9CA9DE57188C02060005DCE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

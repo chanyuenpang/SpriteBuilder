@@ -5,9 +5,9 @@
 	<key>ordering</key>
 	<integer>15000</integer>
 	<key>displayName</key>
-	<string>Box Layout</string>
+	<string>Box Layout (格子布局)</string>
 	<key>description</key>
-	<string>Positions its child nodes below it in a horizontal or vertical box layout.</string>
+	<string>放在里面的元素会自动按顺序排列</string>
 	<key>inheritsFrom</key>
 	<string>CCNode</string>
 	<key>canHaveChildren</key>
@@ -35,14 +35,14 @@
 			<key>name</key>
 			<string>contentSize</string>
 			<key>displayName</key>
-			<string>Content size</string>
+			<string>尺寸</string>
 		</dict>
 	</array>
 	<key>properties</key>
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>CCLayoutBox</string>
+			<string>CCLayoutBox 属性</string>
 			<key>name</key>
 			<string>CCLayoutBox</string>
 			<key>type</key>
@@ -56,13 +56,13 @@
 				<string>contentSize</string>
 			</array>
 			<key>displayName</key>
-			<string>Direction</string>
+			<string>方向</string>
 			<key>type</key>
 			<string>IntegerLabeled</string>
 			<key>name</key>
 			<string>direction</string>
 			<key>extra</key>
-			<string>Horizontal|0|Vertical|1</string>
+			<string>水平排列|0|竖直排列|1</string>
 		</dict>
 		<dict>
 			<key>affectsProperties</key>
@@ -70,7 +70,7 @@
 				<string>contentSize</string>
 			</array>
 			<key>displayName</key>
-			<string>Spacing</string>
+			<string>间距</string>
 			<key>type</key>
 			<string>FloatScale</string>
 			<key>name</key>

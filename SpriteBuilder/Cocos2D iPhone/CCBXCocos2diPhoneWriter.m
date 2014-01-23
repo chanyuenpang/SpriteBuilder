@@ -66,6 +66,8 @@
     [propTypes addObject:@"FloatScale"];
     [propTypes addObject:@"FloatXY"];
     [propTypes addObject:@"Color4"];
+    [propTypes addObject:@"File"];
+    [propTypes addObject:@"MapFile"];
 }
 
 - (id) init
@@ -406,8 +408,6 @@
         NSString* fntName = [[prop lastPathComponent] stringByDeletingPathExtension];
         NSString* path = [[prop stringByAppendingPathComponent:fntName] stringByAppendingPathExtension:@"fnt"];
         
-        NSLog(@"FNT file: %@", path);
-        
         [self writeCachedString:path isPath: YES];
     }
     else if ([type isEqualToString:@"Text"]
@@ -472,6 +472,14 @@
         int b = [[prop objectAtIndex:1] intValue];
         [self writeInt:a withSign:NO];
         [self writeInt:b withSign:NO];
+    }
+    else if ([type isEqualToString:@"File"])
+    {
+        [self writeCachedString:prop isPath: NO];
+    }
+    else if ([type isEqualToString:@"MapFile"])
+    {
+        [self writeCachedString:prop isPath: NO];
     }
 }
 
@@ -621,7 +629,9 @@
             }
             [self addToStringCache:str isPath:NO];
         }
-        else if ([type isEqualToString:@"FontTTF"])
+        else if ([type isEqualToString:@"FontTTF"]
+                 || [type isEqualToString:@"File"]
+                 || [type isEqualToString:@"MapFile"])
         {
             [self addToStringCache:value isPath:NO];
         }
@@ -865,15 +875,18 @@
 - (void) writeNodeGraph:(NSDictionary*)node
 {
     // Write class
-    NSString* class = [node objectForKey:@"customClass"];
+    NSString* baseclass = [node objectForKey:@"baseClass"];
+    [self writeCachedString:baseclass isPath:NO];
+    
+    NSString* customclass = [node objectForKey:@"customClass"];
     
     BOOL hasCustomClass = YES;
-    if (!class || [class isEqualToString:@""])
+    if (customclass == NULL)
     {
-        class = [node objectForKey:@"baseClass"];
+        customclass = @"";
         hasCustomClass = NO;
     }
-    [self writeCachedString:class isPath:NO];
+    [self writeCachedString:customclass isPath:NO];
     
     // Write assignment type and name
     int memberVarAssignmentType = [[node objectForKey:@"memberVarAssignmentType"] intValue];

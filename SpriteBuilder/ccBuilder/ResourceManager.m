@@ -333,6 +333,8 @@
 @synthesize ttfFonts;
 @synthesize ccbFiles;
 @synthesize audioFiles;
+@synthesize plists;
+@synthesize tmaps;
 
 - (id) init
 {
@@ -347,6 +349,8 @@
     ttfFonts = [[NSMutableArray alloc] init];
     ccbFiles = [[NSMutableArray alloc] init];
     audioFiles = [[NSMutableArray alloc] init];
+    plists = [[NSMutableArray alloc] init];
+    tmaps = [[NSMutableArray alloc] init];
     
     return self;
 }
@@ -360,6 +364,9 @@
     if (type == kCCBResTypeAnimation) return animations;
     if (type == kCCBResTypeCCBFile) return ccbFiles;
     if (type == kCCBResTypeAudio) return audioFiles;
+    if (type == kCCBResTypePlist) return plists;
+    if (type == kCCBResTypeTMap) return tmaps;
+    
     return NULL;
 }
 
@@ -402,6 +409,8 @@
     [ccbFiles release];
     [audioFiles release];
     [dirPath release];
+    [plists release];
+    [tmaps release];
     [super dealloc];
 }
 
@@ -627,6 +636,10 @@
     {
         return kCCBResTypeGeneratedSpriteSheetDef;
     }
+    else if ([ext isEqualToString:@"tmx"])
+    {
+        return kCCBResTypeTMap;
+    }
     return kCCBResTypeNone;
 }
 
@@ -725,7 +738,8 @@
                     || res.type == kCCBResTypeTTF
                     || res.type == kCCBResTypeCCBFile
                     || res.type == kCCBResTypeAudio
-                    || res.type == kCCBResTypeGeneratedSpriteSheetDef)
+                    || res.type == kCCBResTypeGeneratedSpriteSheetDef
+                    || res.type == kCCBResTypeTMap)
                 {
                     needsUpdate = YES;
                 }
@@ -794,6 +808,12 @@
         for (NSString* file in resources)
         {
             RMResource* res = [resources objectForKey:file];
+            
+            if (res.type == kCCBResTypeSpriteSheet
+                || res.type == kCCBResTypeDirectory)
+            {
+                [dir.plists addObject:res];
+            }
             if (res.type == kCCBResTypeImage
                 || res.type == kCCBResTypeSpriteSheet
                 || res.type == kCCBResTypeDirectory)
@@ -827,6 +847,11 @@
                 [dir.audioFiles addObject:res];
                 
             }
+            if (res.type == kCCBResTypeTMap
+                || res.type == kCCBResTypeDirectory)
+            {
+                [dir.tmaps addObject:res];
+            }
             if (res.type == kCCBResTypeImage
                 || res.type == kCCBResTypeSpriteSheet
                 || res.type == kCCBResTypeAnimation
@@ -836,7 +861,8 @@
                 || res.type == kCCBResTypeDirectory
                 || res.type == kCCBResTypeJS
                 || res.type == kCCBResTypeJSON
-                || res.type == kCCBResTypeAudio)
+                || res.type == kCCBResTypeAudio
+                || res.type == kCCBResTypeTMap)
             {
                 [dir.any addObject:res];
             }
@@ -1262,9 +1288,20 @@
     }
     else
     {
+        ProjectSettings* projectSettings = [AppDelegate appDelegate].projectSettings;
+        RMResource* dirRes = [[[RMResource alloc] init] autorelease];
+        dirRes.type = kCCBResTypeDirectory;
+        dirRes.filePath = dstDir;
+        BOOL isSmartSpriteSheet = false;
+        
+        if (projectSettings)
+        {
+            isSmartSpriteSheet = [[projectSettings valueForResource:dirRes andKey:@"isSmartSpriteSheet"] boolValue];
+        }
+        
         // Handle regular file
         NSString* ext = [[file pathExtension] lowercaseString];
-        if ([ext isEqualToString:@"png"] || [ext isEqualToString:@"psd"])
+        if (isSmartSpriteSheet && ([ext isEqualToString:@"png"] || [ext isEqualToString:@"psd"]))
         {
             // Handle image import
             
@@ -1299,7 +1336,10 @@
             importedFile = YES;
         
         }
-        else if ([ext isEqualToString:@"ttf"])
+        else if ([ext isEqualToString:@"png"]
+                 || [ext isEqualToString:@"tmx"]
+                 || [ext isEqualToString:@"ttf"]
+                 || [ext isEqualToString:@"jpg"])
         {
             // Import fonts or other files that should just be copied
             NSString* dstPath = [dstDir stringByAppendingPathComponent:[file lastPathComponent]];

@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>displayName</key>
-	<string>Label TTF</string>
+	<string>Label TTF (TTF标签)</string>
 	<key>ordering</key>
 	<integer>9000</integer>
 	<key>description</key>
-	<string>Displays a true type font label.</string>
+	<string>可以显示 ttf 字体的文字标签</string>
 	<key>inheritsFrom</key>
 	<string>CCNode</string>
 	<key>canHaveChildren</key>
@@ -26,14 +26,14 @@
 			<key>name</key>
 			<string>contentSize</string>
 			<key>displayName</key>
-			<string>Content size</string>
+			<string>尺寸</string>
 		</dict>
 	</array>
 	<key>properties</key>
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>CCLabelTTF</string>
+			<string>CCLabelTTF 属性</string>
 			<key>name</key>
 			<string>CCLabelTTF</string>
 			<key>type</key>
@@ -49,7 +49,7 @@
 			<key>default</key>
 			<string>Sample Text</string>
 			<key>displayName</key>
-			<string>Label text</string>
+			<string>文字内容</string>
 			<key>type</key>
 			<string>Text</string>
 			<key>name</key>
@@ -63,7 +63,7 @@
 			<key>default</key>
 			<string>Helvetica</string>
 			<key>displayName</key>
-			<string>Font name</string>
+			<string>字体</string>
 			<key>type</key>
 			<string>FontTTF</string>
 			<key>name</key>
@@ -75,7 +75,7 @@
 				<string>contentSize</string>
 			</array>
 			<key>displayName</key>
-			<string>Font size</string>
+			<string>字体大小</string>
 			<key>type</key>
 			<string>FloatScale</string>
 			<key>name</key>
@@ -87,7 +87,7 @@
 				<string>contentSize</string>
 			</array>
 			<key>displayName</key>
-			<string>Adjusts font size to fit</string>
+			<string>自适应字体大小</string>
 			<key>type</key>
 			<string>Check</string>
 			<key>name</key>
@@ -101,7 +101,7 @@
 			<key>default</key>
 			<integer>1</integer>
 			<key>displayName</key>
-			<string>Opacity</string>
+			<string>不透明度</string>
 			<key>type</key>
 			<string>Float</string>
 			<key>name</key>
@@ -125,7 +125,7 @@
 				<integer>1</integer>
 			</array>
 			<key>displayName</key>
-			<string>Color</string>
+			<string>颜色</string>
 			<key>type</key>
 			<string>Color3</string>
 			<key>name</key>
@@ -137,7 +137,7 @@
 				<string>contentSize</string>
 			</array>
 			<key>displayName</key>
-			<string>Dimensions</string>
+			<string>范围</string>
 			<key>type</key>
 			<string>Size</string>
 			<key>name</key>
@@ -145,13 +145,13 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>Alignment</string>
+			<string>对齐方式</string>
 			<key>type</key>
 			<string>IntegerLabeled</string>
 			<key>name</key>
 			<string>horizontalAlignment</string>
 			<key>extra</key>
-			<string>Left|0|Center|1|Right|2</string>
+			<string>左对齐|0|水平居中|1|右对齐|2</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
@@ -161,11 +161,11 @@
 			<key>name</key>
 			<string>verticalAlignment</string>
 			<key>extra</key>
-			<string>Top|0|Center|1|Bottom|2</string>
+			<string>上对齐|0|垂直居中|1|下对齐|2</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>Font Effects</string>
+			<string>字体效果</string>
 			<key>name</key>
 			<string>Font Effects</string>
 			<key>type</key>
@@ -184,7 +184,7 @@
 				<string>255</string>
 			</array>
 			<key>displayName</key>
-			<string>Draw Color</string>
+			<string>填充颜色</string>
 			<key>type</key>
 			<string>Color4</string>
 			<key>default</key>
@@ -210,7 +210,7 @@
 				<string>0</string>
 			</array>
 			<key>displayName</key>
-			<string>Outline color</string>
+			<string>描边颜色</string>
 			<key>type</key>
 			<string>Color4</string>
 			<key>default</key>
@@ -227,7 +227,7 @@
 				<string>contentSize</string>
 			</array>
 			<key>displayName</key>
-			<string>Outline width</string>
+			<string>描边大小</string>
 			<key>type</key>
 			<string>FloatScale</string>
 			<key>name</key>
@@ -248,7 +248,7 @@
 				<string>0</string>
 			</array>
 			<key>displayName</key>
-			<string>Shadow color</string>
+			<string>阴影颜色</string>
 			<key>type</key>
 			<string>Color4</string>
 			<key>default</key>
@@ -265,7 +265,7 @@
 				<string>contentSize</string>
 			</array>
 			<key>displayName</key>
-			<string>Shadow blur radius</string>
+			<string>阴影大小</string>
 			<key>type</key>
 			<string>FloatScale</string>
 			<key>name</key>
@@ -279,7 +279,7 @@
 				<integer>0</integer>
 			</array>
 			<key>displayName</key>
-			<string>Shadow offset</string>
+			<string>阴影距离</string>
 			<key>type</key>
 			<string>Position</string>
 			<key>name</key>

@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>displayName</key>
-	<string>Gradient Node</string>
+	<string>Gradient Node (渐变色块)</string>
 	<key>ordering</key>
 	<integer>5000</integer>
 	<key>description</key>
-	<string>Draws a square area filled with a gradient.</string>
+	<string>显示一个填充了渐变色的色块</string>
 	<key>inheritsFrom</key>
 	<string>CCNode</string>
 	<key>canHaveChildren</key>
@@ -36,14 +36,14 @@
 			<key>name</key>
 			<string>contentSize</string>
 			<key>displayName</key>
-			<string>Content size</string>
+			<string>尺寸</string>
 		</dict>
 	</array>
 	<key>properties</key>
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>CCNodeGradient</string>
+			<string>CCLayerGradient 属性</string>
 			<key>name</key>
 			<string>CCNodeGradient</string>
 			<key>type</key>
@@ -60,7 +60,7 @@
 				<integer>1</integer>
 			</array>
 			<key>displayName</key>
-			<string>Start color</string>
+			<string>起点颜色</string>
 			<key>type</key>
 			<string>Color3</string>
 			<key>name</key>
@@ -72,7 +72,7 @@
 			<key>default</key>
 			<integer>1</integer>
 			<key>displayName</key>
-			<string>Start opacity</string>
+			<string>起点不透明度</string>
 			<key>type</key>
 			<string>Float</string>
 			<key>name</key>
@@ -87,7 +87,7 @@
 				<integer>1</integer>
 			</array>
 			<key>displayName</key>
-			<string>End color</string>
+			<string>终点颜色</string>
 			<key>type</key>
 			<string>Color3</string>
 			<key>name</key>
@@ -99,7 +99,7 @@
 			<key>default</key>
 			<integer>1</integer>
 			<key>displayName</key>
-			<string>End opacity</string>
+			<string>终点不透明度</string>
 			<key>type</key>
 			<string>Float</string>
 			<key>name</key>
@@ -130,7 +130,7 @@
 				<integer>-1</integer>
 			</array>
 			<key>displayName</key>
-			<string>Vector</string>
+			<string>矢量方向</string>
 			<key>type</key>
 			<string>Point</string>
 			<key>name</key>

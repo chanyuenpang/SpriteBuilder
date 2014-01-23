@@ -5,9 +5,9 @@
 	<key>ordering</key>
 	<integer>7000</integer>
 	<key>displayName</key>
-	<string>Sprite 9 Slice</string>
+	<string>Sprite 9 Slice (九宫格精灵)</string>
 	<key>description</key>
-	<string>Displays stretchable 9-sliced texture with configurable margins.</string>
+	<string>九宫格精灵，设定边距之后可以拉伸</string>
 	<key>inheritsFrom</key>
 	<string>CCSprite</string>
 	<key>canHaveChildren</key>
@@ -35,14 +35,14 @@
 			<key>name</key>
 			<string>contentSize</string>
 			<key>displayName</key>
-			<string>Content size</string>
+			<string>尺寸</string>
 		</dict>
 	</array>
 	<key>properties</key>
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>CCSprite9Slice</string>
+			<string>CCSprite9Slice 属性</string>
 			<key>name</key>
 			<string>CCSprite</string>
 			<key>type</key>
@@ -54,7 +54,7 @@
 			<key>default</key>
 			<real>0.33</real>
 			<key>displayName</key>
-			<string>Margin left</string>
+			<string>左边距</string>
 			<key>type</key>
 			<string>Float</string>
 			<key>name</key>
@@ -64,7 +64,7 @@
 			<key>default</key>
 			<real>0.33</real>
 			<key>displayName</key>
-			<string>Margin right</string>
+			<string>右边距</string>
 			<key>type</key>
 			<string>Float</string>
 			<key>name</key>
@@ -74,7 +74,7 @@
 			<key>default</key>
 			<real>0.33</real>
 			<key>displayName</key>
-			<string>Margin top</string>
+			<string>上边距</string>
 			<key>type</key>
 			<string>Float</string>
 			<key>name</key>
@@ -84,7 +84,7 @@
 			<key>default</key>
 			<real>0.33</real>
 			<key>displayName</key>
-			<string>Margin bottom</string>
+			<string>上边距</string>
 			<key>type</key>
 			<string>Float</string>
 			<key>name</key>

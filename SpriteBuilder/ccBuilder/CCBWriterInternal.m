@@ -390,6 +390,18 @@
         if (!spriteFile) spriteFile = @"";
         serializedValue = spriteFile;
     }
+    else if ([type isEqualToString:@"File"])
+    {
+        NSString* plistFile = [extraProps objectForKey:name];
+        if (!plistFile) plistFile = @"";
+        serializedValue = plistFile;
+    }
+    else if ([type isEqualToString:@"MapFile"])
+    {
+        NSString* mapFile = [extraProps objectForKey:name];
+        if (!mapFile) mapFile = @"";
+        serializedValue = mapFile;
+    }
     else
     {
         NSLog(@"WARNING Unrecognized property type: %@", type);

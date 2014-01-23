@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>description</key>
-	<string>Incorporates another SpriteBuilder interface file.</string>
+	<string>嵌套另一个 ccb 文件作为界面元素</string>
 	<key>ordering</key>
 	<integer>2000</integer>
 	<key>displayName</key>
-	<string>Sub File</string>
+	<string>CCB文件</string>
 	<key>inheritsFrom</key>
 	<string>CCNode</string>
 	<key>canHaveChildren</key>
@@ -29,7 +29,7 @@
 			<key>name</key>
 			<string>anchorPoint</string>
 			<key>displayName</key>
-			<string>Anchor point</string>
+			<string>锚点</string>
 		</dict>
 		<dict>
 			<key>readOnly</key>
@@ -39,7 +39,7 @@
 			<key>name</key>
 			<string>contentSize</string>
 			<key>displayName</key>
-			<string>Content size</string>
+			<string>尺寸</string>
 		</dict>
 	</array>
 	<key>editorClassName</key>
@@ -48,7 +48,7 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>CCBFile</string>
+			<string>CCBFile 属性</string>
 			<key>name</key>
 			<string>CCBFile</string>
 			<key>type</key>
@@ -63,7 +63,7 @@
 				<string>contentSize</string>
 			</array>
 			<key>displayName</key>
-			<string>CCB File</string>
+			<string>CCB 文件</string>
 			<key>type</key>
 			<string>CCBFile</string>
 			<key>name</key>

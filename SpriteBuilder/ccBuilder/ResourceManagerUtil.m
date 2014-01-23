@@ -71,11 +71,12 @@
         {
             RMResource* res = item;
             
-            if (res.type == kCCBResTypeImage
+            if ((res.type == kCCBResTypeImage
                 || res.type == kCCBResTypeBMFont
                 || res.type == kCCBResTypeCCBFile
                 || res.type == kCCBResTypeTTF
-                || res.type == kCCBResTypeAudio)
+                || res.type == kCCBResTypeAudio
+                || res.type == kCCBResTypeTMap) && resType != kCCBResTypePlist)
             {
                 NSString* itemName = [res.filePath lastPathComponent];
                 NSMenuItem* menuItem = [[[NSMenuItem alloc] initWithTitle:itemName action:@selector(selectedResource:) keyEquivalent:@""] autorelease];
@@ -84,24 +85,31 @@
                 
                 menuItem.representedObject = res;
             }
-            else if (res.type == kCCBResTypeSpriteSheet && allowSpriteFrames)
+            else if (res.type == kCCBResTypeSpriteSheet && (resType == kCCBResTypePlist || allowSpriteFrames))
             {
                 NSString* itemName = [res.filePath lastPathComponent];
-                
-                NSMenu* subMenu = [[[NSMenu alloc] initWithTitle:itemName] autorelease];
-                
-                NSArray* frames = res.data;
-                for (RMSpriteFrame* frame in frames)
-                {
-                    NSMenuItem* subItem = [[[NSMenuItem alloc] initWithTitle:frame.spriteFrameName action:@selector(selectedResource:) keyEquivalent:@""] autorelease];
-                    [subItem setTarget:target];
-                    [subMenu addItem:subItem];
-                    subItem.representedObject = frame;
-                }
-                
                 NSMenuItem* menuItem = [[[NSMenuItem alloc] initWithTitle:itemName action:NULL keyEquivalent:@""] autorelease];
                 [menu addItem:menuItem];
-                [menu setSubmenu:subMenu forItem:menuItem];
+                
+                if (allowSpriteFrames) {
+                    NSMenu* subMenu = [[[NSMenu alloc] initWithTitle:itemName] autorelease];
+                    
+                    NSArray* frames = res.data;
+                    for (RMSpriteFrame* frame in frames)
+                    {
+                        NSMenuItem* subItem = [[[NSMenuItem alloc] initWithTitle:frame.spriteFrameName action:@selector(selectedResource:) keyEquivalent:@""] autorelease];
+                        [subItem setTarget:target];
+                        [subMenu addItem:subItem];
+                        subItem.representedObject = frame;
+                    }
+                    
+                    [menu setSubmenu:subMenu forItem:menuItem];
+                }
+                else
+                {
+                    [menuItem setTarget:target];
+                    menuItem.representedObject = res;
+                }
             }
             else if (res.type == kCCBResTypeAnimation)
             {
@@ -128,13 +136,35 @@
                 
                 NSString* itemName = [subDir.dirPath lastPathComponent];
                 
-                NSMenu* subMenu = [[[NSMenu alloc] initWithTitle:itemName] autorelease];
-                
-                [ResourceManagerUtil addDirectory:subDir ToMenu:subMenu target:target resType:resType allowSpriteFrames:allowSpriteFrames];
-                
-                NSMenuItem* menuItem = [[[NSMenuItem alloc] initWithTitle:itemName action:NULL keyEquivalent:@""] autorelease];
-                [menu addItem:menuItem];
-                [menu setSubmenu:subMenu forItem:menuItem];
+                if (resType == kCCBResTypePlist)
+                {
+                    NSArray* subArr = [subDir resourcesForType:resType];
+                    if ([subDir isDynamicSpriteSheet])
+                    {
+                        NSMenuItem* menuItem = [[[NSMenuItem alloc] initWithTitle:itemName action:@selector(selectedResource:) keyEquivalent:@""] autorelease];
+                        [menu addItem:menuItem];
+                        [menuItem setTarget:target];
+                        menuItem.representedObject = res;
+                    } else if ([subArr count] > 0) {
+                        NSMenuItem* menuItem = [[[NSMenuItem alloc] initWithTitle:itemName action:NULL keyEquivalent:@""] autorelease];
+                        [menu addItem:menuItem];
+                        
+                        NSMenu* subMenu = [[[NSMenu alloc] initWithTitle:itemName] autorelease];
+                        
+                        [ResourceManagerUtil addDirectory:subDir ToMenu:subMenu target:target resType:resType allowSpriteFrames:allowSpriteFrames];
+                        [menu setSubmenu:subMenu forItem:menuItem];
+                    }
+                }
+                else
+                {
+                    NSMenuItem* menuItem = [[[NSMenuItem alloc] initWithTitle:itemName action:NULL keyEquivalent:@""] autorelease];
+                   [menu addItem:menuItem];
+                    
+                    NSMenu* subMenu = [[[NSMenu alloc] initWithTitle:itemName] autorelease];
+                    
+                    [ResourceManagerUtil addDirectory:subDir ToMenu:subMenu target:target resType:resType allowSpriteFrames:allowSpriteFrames];
+                    [menu setSubmenu:subMenu forItem:menuItem];
+                }
             }
         }
     }

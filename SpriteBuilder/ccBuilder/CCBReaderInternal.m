@@ -377,6 +377,12 @@ NSDictionary* renamedProperties = NULL;
         [NodeGraphPropertySetter setNodeGraphForNode:node andProperty:name withFile:ccbFile parentSize:parentSize];
         [extraProps setObject:ccbFile forKey:name];
     }
+    else if ([type isEqualToString:@"File"])
+    {
+        NSString* str = serializedValue;
+        if (!str) str = @"";
+        [StringPropertySetter setString:str forNode:node andProp:name];
+    }
     else
     {
         NSLog(@"WARNING Unrecognized property type: %@", type);

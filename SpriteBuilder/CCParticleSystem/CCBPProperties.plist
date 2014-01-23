@@ -5,11 +5,11 @@
 	<key>supportsTemplates</key>
 	<true/>
 	<key>displayName</key>
-	<string>Particle System</string>
+	<string>Particle System (粒子系统)</string>
 	<key>ordering</key>
 	<integer>8000</integer>
 	<key>description</key>
-	<string>Emits particles for effects such as smoke, fire and rain.</string>
+	<string>发射粒子来营造各种效果，比如烟雾，火焰，雨</string>
 	<key>inheritsFrom</key>
 	<string>CCNode</string>
 	<key>canHaveChildren</key>
@@ -28,7 +28,7 @@
 			<key>name</key>
 			<string>contentSize</string>
 			<key>displayName</key>
-			<string>Content size</string>
+			<string>尺寸</string>
 		</dict>
 	</array>
 	<key>editorClassName</key>
@@ -37,7 +37,7 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>CCParticleSystemQuad</string>
+			<string>CCParticleSystemQuad 属性</string>
 			<key>name</key>
 			<string>CCParticleSystemQuad</string>
 			<key>type</key>

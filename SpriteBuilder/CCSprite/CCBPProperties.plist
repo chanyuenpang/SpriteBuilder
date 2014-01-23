@@ -5,9 +5,9 @@
 	<key>ordering</key>
 	<integer>6000</integer>
 	<key>displayName</key>
-	<string>Sprite</string>
+	<string>Sprite (精灵)</string>
 	<key>description</key>
-	<string>Displays a texture.</string>
+	<string>显示一个图片</string>
 	<key>inheritsFrom</key>
 	<string>CCNode</string>
 	<key>canHaveChildren</key>
@@ -35,14 +35,14 @@
 			<key>name</key>
 			<string>contentSize</string>
 			<key>displayName</key>
-			<string>Content size</string>
+			<string>尺寸</string>
 		</dict>
 	</array>
 	<key>properties</key>
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>CCSprite</string>
+			<string>CCSprite 属性</string>
 			<key>name</key>
 			<string>CCSprite</string>
 			<key>type</key>
@@ -64,7 +64,7 @@
 				<string>contentSize</string>
 			</array>
 			<key>displayName</key>
-			<string>Sprite frame</string>
+			<string>纹理</string>
 			<key>type</key>
 			<string>SpriteFrame</string>
 			<key>name</key>
@@ -76,7 +76,7 @@
 			<key>animatable</key>
 			<true/>
 			<key>displayName</key>
-			<string>Opacity</string>
+			<string>不透明度</string>
 			<key>type</key>
 			<string>Float</string>
 			<key>name</key>
@@ -92,7 +92,7 @@
 			<key>animatable</key>
 			<true/>
 			<key>displayName</key>
-			<string>Color</string>
+			<string>颜色</string>
 			<key>type</key>
 			<string>Color3</string>
 			<key>name</key>

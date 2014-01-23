@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>description</key>
+	<string>只能放 sprite 类型，并且 sprite 只能用同一个文件夹的图片，但是性能很好</string>
+	<key>ordering</key>
+	<real>2500</real>
+	<key>displayName</key>
+	<string>CCBatchNode</string>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<true/>
+	<key>className</key>
+	<string>CCSpriteBatchNode</string>
+	<key>editorClassName</key>
+	<string>CCBPBatchNode</string>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>CCBatchNode 属性</string>
+			<key>name</key>
+			<string>CCBatchNode</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>纹理</string>
+			<key>type</key>
+			<string>File</string>
+			<key>name</key>
+			<string>png</string>
+		</dict>
+	</array>
+</dict>
+</plist>
