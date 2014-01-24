@@ -33,6 +33,8 @@
 
 + (void) setFontForNode:(CCNode*)node andProperty:(NSString*) prop withFile:(NSString*) fontFile;
 
++ (void) setMapForNode:(CCNode*)node andProperty:(NSString*) prop withFile:(NSString*) mapFile;
+
 + (NSString*) fontForNode:(CCNode*)node andProperty:(NSString*) prop;
 
 + (void) setTtfForNode:(CCNode*)node andProperty:(NSString*) prop withFont:(NSString*) fontName;

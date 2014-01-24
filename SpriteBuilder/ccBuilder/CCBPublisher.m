@@ -56,7 +56,7 @@
     warnings = [w retain];
     
     // Setup extensions to copy
-    copyExtensions = [[NSArray alloc] initWithObjects:@"jpg", @"png", @"psd", @"pvr", @"ccz", @"plist", @"fnt", @"ttf",@"js", @"json", @"wav",@"mp3",@"m4a",@"caf",@"ccblang", nil];
+    copyExtensions = [[NSArray alloc] initWithObjects:@"jpg", @"png", @"psd", @"pvr", @"ccz", @"plist", @"fnt", @"ttf",@"js", @"json", @"wav",@"mp3",@"m4a",@"caf",@"ccblang", @"tmx" , nil];
     
     publishedSpriteSheetNames = [[NSMutableArray alloc] init];
     publishedSpriteSheetFiles = [[NSMutableSet alloc] init];
@@ -210,8 +210,10 @@
     srcAutoPath = [autoDir stringByAppendingPathComponent:srcFileName];
     
     // Update path to reflect resolution
-    srcDir = [srcDir stringByAppendingPathComponent:[@"resources-" stringByAppendingString:resolution]];
-    dstDir = [dstDir stringByAppendingPathComponent:[@"resources-" stringByAppendingString:resolution]];
+    if (isSpriteSheet) {
+        srcDir = [srcDir stringByAppendingPathComponent:[@"resources-" stringByAppendingString:resolution]];
+        dstDir = [dstDir stringByAppendingPathComponent:[@"resources-" stringByAppendingString:resolution]];
+    }
     
     srcPath = [srcDir stringByAppendingPathComponent:srcFileName];
     dstPath = [dstDir stringByAppendingPathComponent:dstFileName];

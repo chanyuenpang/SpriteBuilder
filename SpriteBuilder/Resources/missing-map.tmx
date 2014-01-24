@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="4" height="4" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="missing-texture" tilewidth="64" tileheight="64">
+  <image source="missing-texture.png" width="64" height="64"/>
+ </tileset>
+ <layer name="块层 1" width="4" height="4">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NkYGBgpAADAEmhaTxAAAAA
+  </data>
+ </layer>
+</map>

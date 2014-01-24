@@ -153,6 +153,7 @@
 		9C6042B31890EB23002D619A /* CCBPProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C60428F1890DECF002D619A /* CCBPProperties.plist */; };
 		9C6042B41890EB27002D619A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6042921890DECF002D619A /* Icon.png */; };
 		9C6042B51890EC69002D619A /* CCTiledMap.ccbPlugNode in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 9C6042AF1890EAF6002D619A /* CCTiledMap.ccbPlugNode */; };
+		9C6042B91890F938002D619A /* missing-map.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 9C6042B81890F938002D619A /* missing-map.tmx */; };
 		9CA9DE42188C00990005DCE5 /* CCBPBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9DE3A188C00990005DCE5 /* CCBPBatchNode.m */; };
 		9CA9DE43188C00990005DCE5 /* CCBPProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9DE3B188C00990005DCE5 /* CCBPProperties.plist */; };
 		9CA9DE44188C00990005DCE5 /* CCBatchNode-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9DE3C188C00990005DCE5 /* CCBatchNode-Info.plist */; };
@@ -1045,8 +1046,8 @@
 		929C9FBD187E38AC009ED9DF /* InspectorPopoverFloat.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InspectorPopoverFloat.xib; sourceTree = "<group>"; };
 		9C60428B1890DECF002D619A /* CCTMXLayer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CCTMXLayer-Info.plist"; sourceTree = "<group>"; };
 		9C60428C1890DECF002D619A /* CCTMXLayer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCTMXLayer-Prefix.pch"; sourceTree = "<group>"; };
-		9C60428D1890DECF002D619A /* CCBPTMXLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCBPTMXLayer.h; path = CCTMXLayer/CCBPTMXLayer.h; sourceTree = "<group>"; };
-		9C60428E1890DECF002D619A /* CCBPTMXLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCBPTMXLayer.m; path = CCTMXLayer/CCBPTMXLayer.m; sourceTree = "<group>"; };
+		9C60428D1890DECF002D619A /* CCBPTMXLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBPTMXLayer.h; sourceTree = "<group>"; };
+		9C60428E1890DECF002D619A /* CCBPTMXLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBPTMXLayer.m; sourceTree = "<group>"; };
 		9C60428F1890DECF002D619A /* CCBPProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CCBPProperties.plist; sourceTree = "<group>"; };
 		9C6042911890DECF002D619A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C6042921890DECF002D619A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -1056,6 +1057,7 @@
 		9C6042A01890E948002D619A /* InspectorMapFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorMapFile.m; sourceTree = "<group>"; };
 		9C6042AF1890EAF6002D619A /* CCTiledMap.ccbPlugNode */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCTiledMap.ccbPlugNode; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6042B01890EAF7002D619A /* CCBatchNode copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CCBatchNode copy-Info.plist"; path = "/Users/chanyuenpang/Desktop/_SpriteBuilder/SpriteBuilder/CCBatchNode copy-Info.plist"; sourceTree = "<absolute>"; };
+		9C6042B81890F938002D619A /* missing-map.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "missing-map.tmx"; sourceTree = "<group>"; };
 		9CA9DE39188C00990005DCE5 /* CCBPBatchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBPBatchNode.h; sourceTree = "<group>"; };
 		9CA9DE3A188C00990005DCE5 /* CCBPBatchNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBPBatchNode.m; sourceTree = "<group>"; };
 		9CA9DE3B188C00990005DCE5 /* CCBPProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CCBPProperties.plist; sourceTree = "<group>"; };
@@ -2172,6 +2174,7 @@
 		776041EF1498FCE50078095D /* Stage Assets */ = {
 			isa = PBXGroup;
 			children = (
+				9C6042B81890F938002D619A /* missing-map.tmx */,
 				B7E775E118563F8C004221AA /* frame-fixed.png */,
 				B71706C7184ECD660081720A /* select-crosshair@2x.png */,
 				B71706C8184ECD660081720A /* select-move.png */,
@@ -2601,6 +2604,8 @@
 			isa = PBXGroup;
 			children = (
 				9C60429D1890E84C002D619A /* Supporting Files */,
+				9C60428D1890DECF002D619A /* CCBPTMXLayer.h */,
+				9C60428E1890DECF002D619A /* CCBPTMXLayer.m */,
 			);
 			path = CCTMXLayer;
 			sourceTree = "<group>";
@@ -3093,8 +3098,6 @@
 			children = (
 				E3D59123150F5367004180CA /* CCBFile */,
 				9C60428A1890DECF002D619A /* CCTMXLayer */,
-				9C60428D1890DECF002D619A /* CCBPTMXLayer.h */,
-				9C60428E1890DECF002D619A /* CCBPTMXLayer.m */,
 				E3B7AEC714E3193500DFD402 /* CCNode */,
 				9CA9DE38188C00990005DCE5 /* CCBatchNode */,
 				B7EE69FA1819EE0D00B983FE /* CCLayoutBox */,
@@ -4447,6 +4450,7 @@
 				B7AC69A517A07DAD0041B8BD /* inspector-folder.png in Resources */,
 				B7AC69A617A07DAD0041B8BD /* inspector-objects.png in Resources */,
 				B7AC69A917A0923B0041B8BD /* inspector-nodes.png in Resources */,
+				9C6042B91890F938002D619A /* missing-map.tmx in Resources */,
 				B7AC69AD17A0938C0041B8BD /* inspector-nodes@2x.png in Resources */,
 				B7AC69B217A1969E0041B8BD /* header-bg2.png in Resources */,
 				B7AC69B417A1A2040041B8BD /* header-bg2-crop.png in Resources */,

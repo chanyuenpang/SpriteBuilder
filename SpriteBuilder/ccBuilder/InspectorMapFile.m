@@ -29,7 +29,7 @@
 #import "AppDelegate.h"
 #import "CCBDocument.h"
 #import "CCBReaderInternal.h"
-#import "StringPropertySetter.h"
+#import "TexturePropertySetter.h"
 #import "CCNode+NodeInfo.h"
 
 
@@ -38,7 +38,7 @@
 - (void) willBeAdded
 {
     // Setup menu
-    NSString* sf = [[selection extraPropForKey:propertyName] stringByDeletingPathExtension];
+    NSString* sf = [selection extraPropForKey:propertyName];
     [ResourceManagerUtil populateResourcePopup:popup resType:kCCBResTypeTMap allowSpriteFrames:NO selectedFile:sf selectedSheet:NULL target:self];
 }
 
@@ -55,10 +55,15 @@
         RMResource* res = item;
         
         dir = [ResourceManagerUtil relativePathFromAbsolutePath:res.filePath];
+        NSLog(@"MapFile Path :\t %@", dir);
         [ResourceManagerUtil setTitle:dir forPopup:popup];
     }
     
-    [StringPropertySetter setString:dir forNode:selection andProp:propertyName];
+    if (dir)
+    {
+        [selection setExtraProp:dir forKey:propertyName];
+        [TexturePropertySetter setMapForNode:selection andProperty:propertyName withFile:dir];
+    }
     
     [self updateAffectedProperties];
     

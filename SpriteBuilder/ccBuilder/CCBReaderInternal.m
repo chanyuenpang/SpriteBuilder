@@ -383,6 +383,13 @@ NSDictionary* renamedProperties = NULL;
         if (!str) str = @"";
         [StringPropertySetter setString:str forNode:node andProp:name];
     }
+    else if ([type isEqualToString:@"MapFile"])
+    {
+        NSString* str = serializedValue;
+        if (!str) str = @"";
+        [node setExtraProp:str forKey:name];
+        [TexturePropertySetter setMapForNode:node andProperty:name withFile:str];
+    }
     else
     {
         NSLog(@"WARNING Unrecognized property type: %@", type);

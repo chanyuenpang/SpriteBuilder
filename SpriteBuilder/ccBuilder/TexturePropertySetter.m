@@ -148,6 +148,34 @@
     [node setExtraProp:fontFile forKey:prop];
 }
 
++ (void) setMapForNode:(CCNode*)node andProperty:(NSString*) prop withFile:(NSString*) mapFile
+{
+    NSString* absPath = NULL;
+    CCTiledMap* map = NULL;
+//    int scale = [AppDelegate appDelegate].projectSettings.resourceAutoScaleFactor;
+    
+    if (mapFile && ![mapFile isEqualToString:@""])
+    {
+        absPath = [[ResourceManager sharedManager] toAbsolutePath:mapFile];
+        @try
+        {
+            map = [CCTiledMap tiledMapWithFile:absPath];
+//            [map setScale:scale];
+            [node setValue:map forKey:prop];
+        }
+        @catch (NSException *exception)
+        {
+            map = [CCTiledMap tiledMapWithFile:@"missing-map.tmx"];
+            [node setValue:map forKey:prop];
+        }
+    }
+    else
+    {
+        map = [CCTiledMap tiledMapWithFile:@"missing-map.tmx"];
+        [node setValue:map forKey:prop];
+    }
+}
+
 + (NSString*) fontForNode:(CCNode*)node andProperty:(NSString*) prop
 {
     NSString* fntFile = [node extraPropForKey:prop];

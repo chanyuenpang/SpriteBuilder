@@ -42,30 +42,21 @@
     return self;
 }
 
-- (void) setTmxFile:(NSString *)tmx
+- (void) setTmxFile:(CCNode *)tmx
 {
-    tmxFile = [tmx retain];
-    
-    NSString* fileName = [[ResourceManager sharedManager] toAbsolutePath:tmx];
-    
     [self removeAllChildrenWithCleanup:YES];
-    CCTiledMap* tMap = [CCTiledMap tiledMapWithFile:fileName];
-    if (tMap)
+    if (tmx)
     {
-        [self addChild:tMap];
-        self.contentSize = tMap.contentSize;
-        tMap.anchorPoint = ccp(0,0);
+        [tmx setPosition:ccp(0,0)];
+        [self addChild:tmx];
+        self.contentSize = tmx.contentSize;
+        tmx.anchorPoint = ccp(0,0);
     }
     else
     {
         self.contentSize = CGSizeZero;
         self.anchorPoint = ccp(0,0);
     }
-}
-
-- (void) dealloc {
-    self.tmxFile = NULL;
-    [super dealloc];
 }
 
 @end

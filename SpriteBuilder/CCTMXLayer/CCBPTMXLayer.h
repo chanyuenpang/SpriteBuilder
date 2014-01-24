@@ -26,9 +26,9 @@
 
 @interface CCBPTMXLayer : CCNode
 {
-    NSString* tmxFile;
+    CCNode* tmxFile;
 }
 
-@property (nonatomic,retain) NSString* tmxFile;
+@property (nonatomic,retain) CCNode* tmxFile;
 
 @end
