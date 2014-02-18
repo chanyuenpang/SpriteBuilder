@@ -54,11 +54,13 @@
 
                     if (dir.isDynamicSpriteSheet)
                     {
-                        item.title = @"Remove Smart Sprite Sheet";
+//                        item.title = @"Remove Smart Sprite Sheet";
+                        item.title = @"取消智能文件夹";
                     }
                     else
                     {
-                        item.title = @"Make Smart Sprite Sheet";
+//                        item.title = @"Make Smart Sprite Sheet";
+                        item.title = @"设置智能文件夹";
                     }
 
                     [item setEnabled:YES];
@@ -89,7 +91,7 @@
         else if (item.action == @selector(menuActionDelete:))
         {
             item.tag = row;
-            item.title = @"Delete";
+            item.title = @"删除";
             
             [item setEnabled:NO];
             if([clickedItem isKindOfClass:[RMResource class]])
@@ -105,17 +107,17 @@
         else if (item.action == @selector(menuActionInterfaceFile:))
         {
             //default behavior.
-            item.title = @"New File...";
+            item.title = @"新建文件...";
             item.tag = row;
         }
         else if (item.action == @selector(menuActionNewFolder:))
         {
-            item.title = @"New Folder";
+            item.title = @"新建文件夹";
             item.tag = row;
         }
         else if (item.action == @selector(menuOpenExternal:))
         {
-            item.title = @"Open With External Editor";
+            item.title = @"使用外部编辑器打开";
 
             if ([clickedItem isKindOfClass:[RMResource class]]) {
                 RMResource* clickedResource = clickedItem;
@@ -126,7 +128,7 @@
                 else if (clickedResource.type == kCCBResTypeDirectory)
                 {
                     [item setEnabled:YES];
-                    item.title = @"Open Folder in Finder";
+                    item.title = @"打开文件夹位置";
                 }
                 else
                 {

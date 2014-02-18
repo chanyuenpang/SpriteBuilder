@@ -115,32 +115,37 @@
         if (res.type == kCCBResTypeImage)
         {
             // Setup preview for image resource
-            self.imgMain = [selection previewForResolution:@"auto"];
-            self.imgPhone = [selection previewForResolution:@"phone"];
-            self.imgPhonehd = [selection previewForResolution:@"phonehd"];
-            self.imgTablet = [selection previewForResolution:@"tablet"];
-            self.imgTablethd = [selection previewForResolution:@"tablethd"];
+            
+            NSString* folder = [[res.filePath stringByDeletingLastPathComponent] lastPathComponent];
+            bool isSmartSpriteSheet = [[settings valueForRelPath:folder andKey:@"isSmartSpriteSheet"] boolValue];
+            
+            if (isSmartSpriteSheet) self.imgMain = [selection previewForResolution:@"auto"];
+            else self.imgMain = [selection preview];
+//            self.imgPhone = [selection previewForResolution:@"phone"];
+//            self.imgPhonehd = [selection previewForResolution:@"phonehd"];
+//            self.imgTablet = [selection previewForResolution:@"tablet"];
+//            self.imgTablethd = [selection previewForResolution:@"tablethd"];
             
             [previewMain setImage: self.imgMain];
-            [previewPhone setImage:self.imgPhone];
-            [previewPhonehd setImage:self.imgPhonehd];
-            [previewTablet setImage:self.imgTablet];
-            [previewTablethd setImage:self.imgTablethd];
-            
-            // Load settings
-            self.scaleFrom = [[settings valueForResource:res andKey:@"scaleFrom"] intValue];
-            
-            self.format_ios = [[settings valueForResource:res andKey:@"format_ios"] intValue];
-            self.format_ios_dither = [[settings valueForResource:res andKey:@"format_ios_dither"] boolValue];
-            self.format_ios_compress = [[settings valueForResource:res andKey:@"format_ios_compress"] boolValue];
-            
-            self.format_android = [[settings valueForResource:res andKey:@"format_android"] intValue];
-            self.format_android_dither = [[settings valueForResource:res andKey:@"format_android_dither"] boolValue];
-            self.format_android_compress = [[settings valueForResource:res andKey:@"format_android_compress"] boolValue];
-            
-            int tabletScale = [[settings valueForResource:res andKey:@"tabletScale"] intValue];
-            if (!tabletScale) tabletScale = 2;
-            self.tabletScale = tabletScale;
+//            [previewPhone setImage:self.imgPhone];
+//            [previewPhonehd setImage:self.imgPhonehd];
+//            [previewTablet setImage:self.imgTablet];
+//            [previewTablethd setImage:self.imgTablethd];
+//            
+//            // Load settings
+//            self.scaleFrom = [[settings valueForResource:res andKey:@"scaleFrom"] intValue];
+//            
+//            self.format_ios = [[settings valueForResource:res andKey:@"format_ios"] intValue];
+//            self.format_ios_dither = [[settings valueForResource:res andKey:@"format_ios_dither"] boolValue];
+//            self.format_ios_compress = [[settings valueForResource:res andKey:@"format_ios_compress"] boolValue];
+//            
+//            self.format_android = [[settings valueForResource:res andKey:@"format_android"] intValue];
+//            self.format_android_dither = [[settings valueForResource:res andKey:@"format_android_dither"] boolValue];
+//            self.format_android_compress = [[settings valueForResource:res andKey:@"format_android_compress"] boolValue];
+//            
+//            int tabletScale = [[settings valueForResource:res andKey:@"tabletScale"] intValue];
+//            if (!tabletScale) tabletScale = 2;
+//            self.tabletScale = tabletScale;
             
             self.enabled = YES;
             
@@ -149,13 +154,13 @@
         else if (res.type == kCCBResTypeDirectory && [res.data isDynamicSpriteSheet])
         {
             // Setup preview for smart sprite sheet
-            self.format_ios = [[settings valueForResource:res andKey:@"format_ios"] intValue];
-            self.format_ios_dither = [[settings valueForResource:res andKey:@"format_ios_dither"] boolValue];
-            self.format_ios_compress = [[settings valueForResource:res andKey:@"format_ios_compress"] boolValue];
-            
-            self.format_android = [[settings valueForResource:res andKey:@"format_android"] intValue];
-            self.format_android_dither = [[settings valueForResource:res andKey:@"format_android_dither"] boolValue];
-            self.format_android_compress = [[settings valueForResource:res andKey:@"format_android_compress"] boolValue];
+//            self.format_ios = [[settings valueForResource:res andKey:@"format_ios"] intValue];
+//            self.format_ios_dither = [[settings valueForResource:res andKey:@"format_ios_dither"] boolValue];
+//            self.format_ios_compress = [[settings valueForResource:res andKey:@"format_ios_compress"] boolValue];
+//            
+//            self.format_android = [[settings valueForResource:res andKey:@"format_android"] intValue];
+//            self.format_android_dither = [[settings valueForResource:res andKey:@"format_android_dither"] boolValue];
+//            self.format_android_compress = [[settings valueForResource:res andKey:@"format_android_compress"] boolValue];
             
             NSString* imgPreviewPath = [res.filePath stringByAppendingPathExtension:@"ppng"];
             NSImage* img = [[[NSImage alloc] initWithContentsOfFile:imgPreviewPath] autorelease];

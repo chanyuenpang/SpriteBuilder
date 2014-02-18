@@ -84,6 +84,7 @@ enum
 @property (nonatomic,retain) id data;
 - (void) loadData;
 - (NSImage*) previewForResolution:(NSString*) res;
+- (NSImage*) preview;
 
 @end
 

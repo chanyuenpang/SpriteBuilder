@@ -144,6 +144,17 @@
     return NULL;
 }
 
+- (NSImage*) preview
+{
+    if (type == kCCBResTypeImage)
+    {
+        NSImage* img = [[[NSImage alloc] initWithContentsOfFile:filePath] autorelease];
+        return img;
+    }
+    
+    return NULL;
+}
+
 - (NSComparisonResult) compare:(id) obj
 {
     RMResource* res = obj;
@@ -1339,7 +1350,8 @@
         else if ([ext isEqualToString:@"png"]
                  || [ext isEqualToString:@"tmx"]
                  || [ext isEqualToString:@"ttf"]
-                 || [ext isEqualToString:@"jpg"])
+                 || [ext isEqualToString:@"jpg"]
+                 || [ext isEqualToString:@"mp3"])
         {
             // Import fonts or other files that should just be copied
             NSString* dstPath = [dstDir stringByAppendingPathComponent:[file lastPathComponent]];

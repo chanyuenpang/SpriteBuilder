@@ -679,6 +679,7 @@
         {
             NSArray* value = [kf objectForKey:@"value"];
             NSString* soundName = [value objectAtIndex:0];
+            
             [self addToStringCache:soundName isPath:YES];
         }
     }
@@ -841,7 +842,8 @@
         [self writeFloat:c];
         [self writeFloat:d];
     }
-    else if ([type isEqualToString:@"Degrees"])
+    else if ([type isEqualToString:@"Degrees"]
+             || [type isEqualToString:@"Float"])
     {
         [self writeFloat:[value floatValue]];
     }

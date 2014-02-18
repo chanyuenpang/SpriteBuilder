@@ -446,7 +446,7 @@ typedef struct _PVRTexHeader
             // Get info about the image
             NSString* filename = [self.filenames objectAtIndex:outRects[index].idx];
             NSString* exportFilename = [filename lastPathComponent];
-            if (directoryPrefix_) exportFilename = [directoryPrefix_ stringByAppendingPathComponent:exportFilename];
+//            if (directoryPrefix_) exportFilename = [directoryPrefix_ stringByAppendingPathComponent:exportFilename];
             NSDictionary* imageInfo = [imageInfos objectAtIndex:outRects[index].idx];
             
             bool rot = false;

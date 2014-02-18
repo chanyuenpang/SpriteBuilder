@@ -405,6 +405,11 @@
 {
     NSAssert(res.type == kCCBResTypeDirectory, @"Resource must be directory");
     
+    RMDirectory* dir = res.data;
+    for (RMResource* child in dir.any){
+            
+    }
+    
     [self removeObjectForResource:res andKey:@"isSmartSpriteSheet"];
     
     [self store];
@@ -521,7 +526,7 @@
 - (void) movedResourceFrom:(NSString*) relPathOld to:(NSString*) relPathNew
 {
     id props = [resourceProperties objectForKey:relPathOld];
-    if (props) [resourceProperties setObject:props forKey:relPathNew];
+    if (props)[resourceProperties setObject:props forKey:relPathNew];
     [resourceProperties removeObjectForKey:relPathOld];
 }
 
