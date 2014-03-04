@@ -206,13 +206,14 @@
     NSString* dstFileName = [dstPath lastPathComponent];
     NSString* srcDir = [srcPath stringByDeletingLastPathComponent];
     NSString* dstDir = [dstPath stringByDeletingLastPathComponent];
-    NSString* autoDir = [srcDir stringByAppendingPathComponent:@"resources-auto"];
+//    NSString* autoDir = [srcDir stringByAppendingPathComponent:@"resources-auto"];
+    NSString* autoDir = srcDir;
     srcAutoPath = [autoDir stringByAppendingPathComponent:srcFileName];
     
     // Update path to reflect resolution
     if (isSpriteSheet) {
-        srcDir = [srcDir stringByAppendingPathComponent:[@"resources-" stringByAppendingString:resolution]];
-        dstDir = [dstDir stringByAppendingPathComponent:[@"resources-" stringByAppendingString:resolution]];
+//        srcDir = [srcDir stringByAppendingPathComponent:[@"resources-" stringByAppendingString:resolution]];
+//        dstDir = [dstDir stringByAppendingPathComponent:[@"resources-" stringByAppendingString:resolution]];
     }
     
     srcPath = [srcDir stringByAppendingPathComponent:srcFileName];
