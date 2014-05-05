@@ -345,6 +345,7 @@ typedef struct _PVRTexHeader
         // Get the image and info
         CGImageRef srcImage = (CGImageRef)[[images objectAtIndex:outRects[index].idx] pointerValue];
         NSDictionary* imageInfo = [imageInfos objectAtIndex:outRects[index].idx];
+        NSLog(@"%@",imageInfo);
         
         x = outRects[index].x;
         y = outRects[index].y;
@@ -383,7 +384,7 @@ typedef struct _PVRTexHeader
             
             CGImageRelease(srcImage);
             srcImage = CGBitmapContextCreateImage(rotContext);
-            CFRelease(rotContext);
+            if (rotContext) CFRelease(rotContext);
         }
         
         // Draw the image

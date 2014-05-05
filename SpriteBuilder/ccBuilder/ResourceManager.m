@@ -133,9 +133,9 @@
     {
         NSString* fileName = [filePath lastPathComponent];
         NSString* dirPath = [filePath stringByDeletingLastPathComponent];
-        NSString* resDirName = [@"resources-" stringByAppendingString:res];
+//        NSString* resDirName = [@"resources-" stringByAppendingString:res];
         
-        NSString* autoPath = [[dirPath stringByAppendingPathComponent:resDirName] stringByAppendingPathComponent:fileName];
+        NSString* autoPath = [dirPath stringByAppendingPathComponent:fileName];
         
         NSImage* img = [[[NSImage alloc] initWithContentsOfFile:autoPath] autorelease];
         return img;

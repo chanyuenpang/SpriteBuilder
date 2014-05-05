@@ -165,6 +165,18 @@
 			<key>displayName</key>
 			<string>倾斜</string>
 		</dict>
+		<dict>
+			<key>defaultSerialization</key>
+			<integer>0</integer>
+			<key>animatable</key>
+			<true/>
+			<key>type</key>
+			<string>Integer</string>
+			<key>name</key>
+			<string>tag</string>
+			<key>displayName</key>
+			<string>数字标签</string>
+		</dict>
 	</array>
 	<key>propertiesOverridden</key>
 	<array/>
