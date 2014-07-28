@@ -84,11 +84,11 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>ClipsToBounds</string>
+			<string>ClippingToBounds</string>
 			<key>type</key>
 			<string>Check</string>
 			<key>name</key>
-			<string>clipsToBounds</string>
+			<string>clippingToBounds</string>
 		</dict>
 	</array>
 </dict>

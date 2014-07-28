@@ -169,7 +169,7 @@
 			<key>defaultSerialization</key>
 			<integer>0</integer>
 			<key>animatable</key>
-			<true/>
+			<false/>
 			<key>type</key>
 			<string>Integer</string>
 			<key>name</key>

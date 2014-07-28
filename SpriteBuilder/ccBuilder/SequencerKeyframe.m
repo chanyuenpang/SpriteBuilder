@@ -159,9 +159,13 @@ NSString * kClipboardChannelKeyframes   = @"com.cocosbuilder.channelkeyframes";
         return ([[value objectAtIndex:0] floatValue] == [[keyframe.value objectAtIndex:0] floatValue]
                 && [[value objectAtIndex:1] floatValue] == [[keyframe.value objectAtIndex:1] floatValue]);
     }
-    else if (type == kCCBKeyframeTypeByte || type == kCCBKeyframeTypeFloat)
+    else if (type == kCCBKeyframeTypeByte)
     {
         return ([value intValue] == [keyframe.value intValue]);
+    }
+    else if (type == kCCBKeyframeTypeFloat)
+    {
+        return (int)(10*[value floatValue]) == (int)(10*[keyframe.value floatValue]);
     }
     else if (type == kCCBKeyframeTypeColor3)
     {
