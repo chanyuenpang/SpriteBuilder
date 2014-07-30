@@ -1705,7 +1705,7 @@ static BOOL hideAllToNextSeparator;
     if (!success) return NO;
     
     // Load or create language file
-    NSString* langFile = [resManager.mainActiveDirectoryPath stringByAppendingPathComponent:@"Strings.ccbLang"];
+    NSString* langFile = [resManager.mainActiveDirectoryPath stringByAppendingPathComponent:@"LStrings.plist"];
     localizationEditorHandler.managedFile = langFile;
     
     // Update the title of the main window
