@@ -249,11 +249,11 @@
     {
         NSFileManager* fm = [NSFileManager defaultManager];
         
-        NSString* dir = [self.filePath stringByDeletingLastPathComponent];
-        NSString* file = [self.filePath lastPathComponent];
-        NSString* autoPath = [[dir stringByAppendingPathComponent:@"resources-auto"] stringByAppendingPathComponent:file];
+//        NSString* dir = [self.filePath stringByDeletingLastPathComponent];
+//        NSString* file = [self.filePath lastPathComponent];
+//        NSString* autoPath = [[dir stringByAppendingPathComponent:@"resources-auto"] stringByAppendingPathComponent:file];
         
-        if ([fm fileExistsAtPath:autoPath]) return autoPath;
+        if ([fm fileExistsAtPath:self.filePath]) return self.filePath;
         else return NULL;
     }
     else if (self.type == kCCBResTypeCCBFile)
