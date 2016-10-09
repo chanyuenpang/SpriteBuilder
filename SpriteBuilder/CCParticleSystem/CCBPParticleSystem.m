@@ -31,7 +31,7 @@
     self = [super init];
     if (!self) return NULL;
     
-    self.particlePositionType = CCParticleSystemPositionTypeGrouped;
+//    self.particlePositionType = CCParticleSystemPositionTypeGrouped;
     
     return self;
 }
@@ -181,6 +181,11 @@
 - (void) setRotatePerSecondVar:(float)rotatePerSecondVar
 {
     if (_emitterMode == CCParticleSystemModeRadius) [super setRotatePerSecondVar:rotatePerSecondVar];
+}
+
+- (void) setParticlePositionType:(CCParticleSystemPositionType)particlePositionType
+{
+    [super setParticlePositionType:particlePositionType];
 }
 
 - (NSArray*) ccbExcludePropertiesForSave

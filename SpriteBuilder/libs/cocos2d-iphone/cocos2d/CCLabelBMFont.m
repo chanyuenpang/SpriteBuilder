@@ -511,7 +511,7 @@ void FNTConfigRemoveCache( void )
 
 		_contentSize = CGSizeZero;
 		
-		_opacityModifyRGB = [[_textureAtlas texture] hasPremultipliedAlpha];
+		_opacityModifyRGB = YES;//[[_textureAtlas texture] hasPremultipliedAlpha];
 		
 		_anchorPoint = ccp(0.5f, 0.5f);
         

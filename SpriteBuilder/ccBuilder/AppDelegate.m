@@ -3074,6 +3074,7 @@ static BOOL hideAllToNextSeparator;
 
 - (void) setResolution:(int)r
 {
+    if (currentDocument.currentResolution == r) return;
     currentDocument.currentResolution = r;
     
     [self updatePositionScaleFactor];

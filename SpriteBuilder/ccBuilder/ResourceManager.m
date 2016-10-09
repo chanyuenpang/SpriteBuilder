@@ -841,8 +841,7 @@
             {
                 [dir.bmFonts addObject:res];
             }
-            if (res.type == kCCBResTypeTTF
-                || res.type == kCCBResTypeDirectory)
+            if (res.type == kCCBResTypeTTF)
             {
                 [dir.ttfFonts addObject:res];
             }

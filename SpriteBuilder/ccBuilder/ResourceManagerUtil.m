@@ -241,6 +241,7 @@
     [self setTitle:selectedTitle forPopup:popup];
 }
 
+
 + (void) populateFontTTFPopup:(NSPopUpButton*)popup selectedFont:(NSString*)file target:(id)target
 {
     NSMenu* menu = [popup menu];

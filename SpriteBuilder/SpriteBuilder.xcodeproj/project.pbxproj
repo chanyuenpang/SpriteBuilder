@@ -1056,7 +1056,6 @@
 		9C60429F1890E948002D619A /* InspectorMapFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorMapFile.h; sourceTree = "<group>"; };
 		9C6042A01890E948002D619A /* InspectorMapFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorMapFile.m; sourceTree = "<group>"; };
 		9C6042AF1890EAF6002D619A /* CCTiledMap.ccbPlugNode */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCTiledMap.ccbPlugNode; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C6042B01890EAF7002D619A /* CCBatchNode copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CCBatchNode copy-Info.plist"; path = "/Users/chanyuenpang/Desktop/_SpriteBuilder/SpriteBuilder/CCBatchNode copy-Info.plist"; sourceTree = "<absolute>"; };
 		9C6042B81890F938002D619A /* missing-map.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "missing-map.tmx"; sourceTree = "<group>"; };
 		9CA9DE39188C00990005DCE5 /* CCBPBatchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBPBatchNode.h; sourceTree = "<group>"; };
 		9CA9DE3A188C00990005DCE5 /* CCBPBatchNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBPBatchNode.m; sourceTree = "<group>"; };
@@ -2364,7 +2363,6 @@
 				FA98CFC5154E7D1C006E58C5 /* ccbpublish */,
 				7789ABC1133AA82000CEFCC7 /* Frameworks */,
 				7789ABBF133AA82000CEFCC7 /* Products */,
-				9C6042B01890EAF7002D619A /* CCBatchNode copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -5431,6 +5429,7 @@
 					"\"$(SRCROOT)/libs/Tupac\"",
 					"\"$(SRCROOT)/libs/PVRTexTool\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = SpriteBuilder;
 				WRAPPER_EXTENSION = app;
@@ -5475,6 +5474,7 @@
 					"\"$(SRCROOT)/libs/Tupac\"",
 					"\"$(SRCROOT)/libs/PVRTexTool\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = SpriteBuilder;
 				WRAPPER_EXTENSION = app;

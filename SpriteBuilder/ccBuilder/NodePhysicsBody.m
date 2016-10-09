@@ -140,10 +140,10 @@
     CGPoint d = ccp(w, 0);
     
     self.points = [NSArray arrayWithObjects:
-                   [NSValue valueWithPoint:a],
-                   [NSValue valueWithPoint:b],
-                   [NSValue valueWithPoint:c],
                    [NSValue valueWithPoint:d],
+                   [NSValue valueWithPoint:c],
+                   [NSValue valueWithPoint:b],
+                   [NSValue valueWithPoint:a],
                    nil];
 }
 

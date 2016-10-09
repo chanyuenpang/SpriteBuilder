@@ -180,7 +180,9 @@
         BOOL isDirty = [projectSettings isDirtyRelPath:ssDirRel];
         
         // Make the name for the final sprite sheet
-        NSString* ssDstPath = [[[[outDir stringByDeletingLastPathComponent] stringByAppendingPathComponent:[NSString stringWithFormat:@"resources-%@", resolution]] stringByAppendingPathComponent:ssName] stringByAppendingPathExtension:@"plist"];
+        // NSString* ssDstPath = [[[[outDir stringByDeletingLastPathComponent] stringByAppendingPathComponent:[NSString stringWithFormat:@"resources-%@", resolution]] stringByAppendingPathComponent:ssName] stringByAppendingPathExtension:@"plist"];
+        //YODO
+        NSString* ssDstPath = [[[outDir stringByDeletingLastPathComponent] stringByAppendingPathComponent:ssName] stringByAppendingPathExtension:@"plist"];
         
         NSDate* ssDstDate = [CCBFileUtil modificationDateForFile:ssDstPath];
         
@@ -252,7 +254,7 @@
     
     // Copy and convert the image
     BOOL isDirty = [projectSettings isDirtyRelPath:relPath];
-    
+    NSLog(@"srcPath %@ ", srcPath);
     if ([fm fileExistsAtPath:srcPath])
     {
         // Has customized file for resolution
@@ -396,6 +398,19 @@
 
 - (BOOL) publishDirectory:(NSString*) dir subPath:(NSString*) subPath
 {
+    //YODO
+    BOOL isGeneratedSpriteSheet = NO;
+    long mainDirLength = [[projectSettings.absoluteResourcePaths objectAtIndex:0] length];
+    if (subPath) {
+        NSString* testString = [dir substringFromIndex:mainDirLength + 1];
+        if ([[projectSettings valueForRelPath:testString andKey:@"isSmartSpriteSheet"] boolValue]) {
+            isGeneratedSpriteSheet = YES;
+            NSLog(@"subpath : %@", subPath);
+        } else {
+            subPath = nil;
+        }
+    }
+    
     AppDelegate* ad = [AppDelegate appDelegate];
     NSArray* resIndependentDirs = [ResourceManager resIndependentDirs];
     
@@ -413,21 +428,16 @@
     }
     
     // Check for generated sprite sheets
-    BOOL isGeneratedSpriteSheet = NO;
     NSDate* srcSpriteSheetDate = NULL;
     
-    if ([[projectSettings valueForRelPath:subPath andKey:@"isSmartSpriteSheet"] boolValue])
+    if (isGeneratedSpriteSheet)
     {
-        isGeneratedSpriteSheet = YES;
         srcSpriteSheetDate = [self latestModifiedDateForDirectory:dir];
         
         // Clear temporary sprite sheet directory
         [fm removeItemAtPath:[projectSettings tempSpriteSheetCacheDirectory] error:NULL];
-    }
-    
-    // Create the directory if it doesn't exist
-    if (!isGeneratedSpriteSheet)
-    {
+    } else{
+        // Create the directory if it doesn't exist
         BOOL createdDirs = [fm createDirectoryAtPath:outDir withIntermediateDirectories:YES attributes:NULL error:NULL];
         if (!createdDirs)
         {
@@ -451,7 +461,9 @@
     }
     
     // Add files from the -auto directory
-    NSString* autoDir = [dir stringByAppendingPathComponent:@"resources-auto"];
+    // YODO
+    //NSString* autoDir = [dir stringByAppendingPathComponent:@"resources-auto"];
+    NSString* autoDir = dir;
     BOOL isDirAuto;
     if ([fm fileExistsAtPath:autoDir isDirectory:&isDirAuto] && isDirAuto)
     {
@@ -472,7 +484,9 @@
             if ([[filePath pathExtension] isEqualToString:@"bmfont"])
             {
                 // This is a bitmap font, just copy it
-                [self publishRegularFile:filePath to:[outDir stringByAppendingPathComponent:fileName]];
+                // YODO
+                //[self publishRegularFile:filePath to:[outDir stringByAppendingPathComponent:fileName]];
+                [self publishDirectory:filePath subPath:outDir];
                 continue;
             }
             
@@ -524,6 +538,7 @@
                 if (isGeneratedSpriteSheet)
                 {
                     dstFile = [[projectSettings tempSpriteSheetCacheDirectory] stringByAppendingPathComponent:fileName];
+                    NSLog(@"dst : %@\t %@", dstFile, fileName);
                 }
                 
                 NSString* relPath = fileName;
@@ -534,6 +549,7 @@
                 if ([ext isEqualToString:@"png"] || [ext isEqualToString:@"psd"])
                 {
                     // Publish images
+                    NSLog(@"png file %@", filePath);
                     [self publishImageFile:filePath to:dstFile isSpriteSheet:isGeneratedSpriteSheet outDir:outDir];
                 }
                 else if ([ext isEqualToString:@"wav"])
@@ -612,7 +628,9 @@
                                 projectSettings.tempSpriteSheetCacheDirectory,
                                 nil];
             
-            NSString* spriteSheetFile = spriteSheetFile = [[spriteSheetDir stringByAppendingPathComponent:[NSString stringWithFormat:@"resources-%@", res]] stringByAppendingPathComponent:spriteSheetName];
+            // NSString* spriteSheetFile = spriteSheetFile = [[spriteSheetDir stringByAppendingPathComponent:[NSString stringWithFormat:@"resources-%@", res]] stringByAppendingPathComponent:spriteSheetName];
+            // YODO
+            NSString* spriteSheetFile = spriteSheetFile = [spriteSheetDir stringByAppendingPathComponent:spriteSheetName];
             
             // Skip publish if sprite sheet exists and is up to date
             NSDate* dstDate = [CCBFileUtil modificationDateForFile:[spriteSheetFile stringByAppendingPathExtension:@"plist"]];
@@ -658,7 +676,9 @@
              */
             
             // Set texture maximum size
-            if ([res isEqualToString:@"phone"]) packer.maxTextureSize = 1024;
+//            YODO
+//            if ([res isEqualToString:@"phone"]) packer.maxTextureSize = 1024;
+            if ([res isEqualToString:@"phone"]) packer.maxTextureSize = 2048;
             else if ([res isEqualToString:@"phonehd"]) packer.maxTextureSize = 2048;
             else if ([res isEqualToString:@"tablet"]) packer.maxTextureSize = 2048;
             else if ([res isEqualToString:@"tablethd"]) packer.maxTextureSize = 4096;
@@ -1149,7 +1169,7 @@
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     NSString* ccbChacheDir = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"com.cocosbuilder.CocosBuilder"];
-    [[NSFileManager defaultManager] removeItemAtPath:ccbChacheDir error:NULL];
+//[[NSFileManager defaultManager] removeItemAtPath:ccbChacheDir error:NULL];
 }
 
 - (void) dealloc

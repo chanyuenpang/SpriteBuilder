@@ -258,6 +258,7 @@ typedef struct _PVRTexHeader
 
     // Find the longest side
     int maxSideLen = 8;
+    
     for (NSDictionary* imageInfo in imageInfos)
     {
         NSRect trimRect = [[imageInfo objectForKey:@"trimRect"] rectValue];
@@ -267,8 +268,10 @@ typedef struct _PVRTexHeader
         
         int h = trimRect.size.height;
         if (h > maxSideLen) maxSideLen = h + self.padding * 2;
+        
     }
     maxSideLen = upper_power_of_two(maxSideLen);
+    
     
     // Pack using max rects
     int outW = maxSideLen;
@@ -280,6 +283,7 @@ typedef struct _PVRTexHeader
     if (self.imageFormat == kFCImageFormatPVRTC_2BPP || kFCImageFormatPVRTC_4BPP)
     {
         makeSquare = YES;
+        outW = maxSideLen;
         outH = outW;
     }
     BOOL allFitted = NO;
